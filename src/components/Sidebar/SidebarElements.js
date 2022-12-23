@@ -10,7 +10,6 @@ export const SidebarContainer = styled.aside`
 position: fixed;
 font-family:'Kano';
 z-index: 999;
-
 background: URL(${pochita});
 background-repeat: no-repeat;
 backgroundSize: cover;
@@ -22,8 +21,8 @@ align-items: center;
 top:0;
 left:0;
 
-// opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-// top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -35,7 +34,7 @@ top: 1.2rem;
 right: 1.5rem;
 background: transparent;
 font-size: 2rem;
-cursor: pointer;
+// cursor: pointer;
 outline:none;
 `
 export const SidebarWrapper = styled.div`
@@ -61,8 +60,8 @@ text-decoration: none;
 list-style: none;
 transition: 0.2s ease-in-out;
 text-decoration: none;
-color: #8ba888;
-cursor: pointer;
+color: #44624a;
+// cursor: pointer;
 
 &:hover {
     color: #fff;
@@ -85,7 +84,7 @@ white-space: nowrap;
 padding: 70px 60px; 
 outline: none;
 border: none;
-cursor: pointer;
+// cursor: pointer;
 text-decoration: none;
 
 &:hover {

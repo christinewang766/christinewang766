@@ -6,7 +6,6 @@ import navbarBackground from "C:/Users/chris/tofu-cafe/src/images/navbarBackgrou
 export const Nav = styled.nav`
 background: url(${navbarBackground});
 height: 80px;
-// margin-top: -80px;
 display: flex; // child elements automatically align w/ auto width/height
 justify-content: center;
 align-items: center;
@@ -33,7 +32,7 @@ export const NavLogo = styled(LinkR)`
 color: #44624a;
 justify-self: flex-start;
 justify-content: left;
-cursor: pointer;
+// cursor: pointer;
 font-size: 1.2rem;
 display: flex;
 align-items: center;
@@ -53,7 +52,7 @@ display: none;
     align-items: center;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
+    // cursor: pointer;
     color: #44624a;
 }
 `
@@ -80,7 +79,7 @@ align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
-cursor: pointer;
+// cursor: pointer;
 
 // when you hover over nav link, it underlines
 &.active {
@@ -107,7 +106,7 @@ font-weight: bold;
 letter-spacing: 2px;
 outline: none;
 border: none;
-cursor: pointer;
+// cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
 

@@ -15,6 +15,7 @@ import {
 const Navbar = () => {
   return (
     <>
+  
     <Nav>
         <NavbarContainer>
             <NavLogo to='/'>Christine Wang</NavLogo>

@@ -1,13 +1,27 @@
 import React from 'react'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
 
-const index = () => {
+
+const Sidebar = () => {
   return (
     <SidebarContainer>
       <Icon>
         <CloseIcon />
       </Icon>
+      <SidebarWrapper>
+        <SidebarMenu>
+        <SidebarLink to="about">About</SidebarLink>
+        <SidebarLink to="projects">Projects</SidebarLink>
+        <SidebarLink to="work">Work</SidebarLink>
+        <SidebarLink to="contact">Contact</SidebarLink>
+        </SidebarMenu>
+        <SideBtnWrap>
+            <SidebarRoute to="/message">      </SidebarRoute>
+        </SideBtnWrap>
+      </SidebarWrapper>
     </SidebarContainer>
+    
   )
 }
 
-export default index
+export default Sidebar

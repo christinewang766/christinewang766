@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
-import navbarBackground from "C:/Users/chris/tofu-cafe/src/images/navbarBackground.png";
+import navbarBackground from "../images/navbarBackground.png";
 
 export const Nav = styled.nav`
 background: url(${navbarBackground});
 height: 80px;
+margin-top: -80px;
 display: flex; // child elements automatically align w/ auto width/height
 justify-content: center;
 align-items: center;
@@ -52,7 +53,6 @@ display: none;
     align-items: center;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    // cursor: pointer;
     color: #44624a;
 }
 `
@@ -79,11 +79,14 @@ align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
-// cursor: pointer;
 
-// when you hover over nav link, it underlines
+&:hover {
+    border-bottom: 3px solid #c0cfb2;
+}
+
 &.active {
-    border-bottom: 3px solid #01bf71;
+    transition: all 0.2s ease-in-out;
+    color: 	#f1ebe1;
 }
 `
 

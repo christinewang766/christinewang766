@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 import { Link as LinkR } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
-import pochita from "C:/Users/chris/tofu-cafe/src/images/pochita.png";
-import closedLetter from "C:/Users/chris/tofu-cafe/src/images/closedLetter.png";
-import openLetter from "C:/Users/chris/tofu-cafe/src/images/openLetter.png";
+import pochita from "../images/pochita.png";
+import closedLetter from "../images/closedLetter.png";
+import openLetter from "../images/openLetter.png";
 
 export const SidebarContainer = styled.aside`
 position: fixed;

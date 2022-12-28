@@ -1,13 +1,14 @@
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
+import Home from './pages';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
+import Aos from 'aos'
 
 function App() {
+  Aos.init();
+
   return (
     <Router>
-      <Navbar />
-      <Sidebar />
+      <Home />
     </Router>
   );
 }

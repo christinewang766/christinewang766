@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
-import navbarBackground from "../images/navbarBackground.png";
+import navbarBackground from "./images/navbarBackground.png";
 
 export const Nav = styled.nav`
 background: url(${navbarBackground});
 height: 80px;
 margin-top: -80px;
-display: flex; // child elements automatically align w/ auto width/height
+display: flex;
 justify-content: center;
 align-items: center;
 font-family:'Kano';

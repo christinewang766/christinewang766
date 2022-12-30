@@ -3,10 +3,8 @@ import FrontHome from '../components/HomePages/FrontHome';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Services from '../components/Services';
+import Skills from '../components/HomePages/SkillsSection';
 import AboutSection from '../components/HomePages/AboutSection';
-import SkillsSection from '../components/HomePages/SkillsSection';
-import { skillsSection } from '../components/HomePages/SkillsSection/SkillsData';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,8 +19,7 @@ const Home = () => {
     <Navbar toggle={toggle} />
     <FrontHome />
     <AboutSection />
-    <Services />
-    <SkillsSection {...skillsSection} />
+    <Skills />
     <Footer />
     </>
   )

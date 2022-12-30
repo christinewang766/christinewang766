@@ -44,6 +44,7 @@ font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
 color: #f7f8fa;
+font-family: "Playfair Display";
 
 @media screen and (max-width: 480px){
     font-size: 32px;

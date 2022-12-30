@@ -41,7 +41,8 @@ export const FrontH1 = styled.h1`
 color: #fff;
 font-size: 95px;
 text-align: center;
-font-family: "Kano";
+font-family: "Playfair Display";
+text-shadow: #c0cfb2 1px 0 10px;
 
 @media screen and (max-width: 768px) {
     font-size: 55px;

@@ -5,6 +5,7 @@ import Back from "./images/back.png";
 import DogPot from "./images/dogPot.png";
 import BunnyPot from "./images/bunnyPot.png";
 import monet from "./images/monet.png";
+import clawCursor from "./images/clawCursor.png";
 
 export const BackButton = styled.button`
 outline: none;
@@ -24,6 +25,10 @@ padding: 10px 40px;
 
 display: block;
 float: top;
+
+&:hover{
+  cursor: URL(${clawCursor}), auto;
+}
 `
 export const ButtonWrap = styled.div`
 width: 60px;
@@ -184,6 +189,12 @@ color: #44624a;
     &-content {
         width: 100%;
         }
+  }
+
+  @media screen and (max-width: 380px) {
+    &-content {
+      width: 90%;
+      } 
   }
 `
 export const ButtonLong = styled.button`

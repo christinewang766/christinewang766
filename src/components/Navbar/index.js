@@ -1,5 +1,4 @@
 import {animateScroll as scroll} from 'react-scroll'
-// import React, {useState, useEffect} from 'react'
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
 import {

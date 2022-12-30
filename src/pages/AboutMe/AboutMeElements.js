@@ -1,10 +1,30 @@
 import styled from 'styled-components'
 import Popup from 'reactjs-popup';
-import SnailPot from "../images/snailPot.png";
-import DogPot from "../images/dogPot.png";
-import BunnyPot from "../images/bunnyPot.png";
+import SnailPot from "./images/snailPot.png";
+import DogPot from "./images/dogPot.png";
+import BunnyPot from "./images/bunnyPot.png";
+import monet from "./images/monet.png";
 
-import monet from "../images/monet.png";
+export const TitleWrap = styled.div`
+width: 100px;
+height: 400px;
+background: #44624a;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 20px 10px lightblue;
+float:left;
+`
+
+export const Title = styled.h1`
+font-family: "Florentia";  
+font-weight: bold;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+transform: rotate(180deg);
+letter-spacing: 5px;
+color: #fff;
+`
 
 export const AboutContainer = styled.div`
 background: url(${monet});
@@ -16,16 +36,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #fff;
-
-
-@media screen and (max-width: 768px) {
-    padding: 100px 0;
 }
 `
 
 export const AboutWrapper = styled.div`
 z-index: 1;
-height: 860px;
+height: 800px;
 max-width: 1100px;
 `
 
@@ -34,6 +50,8 @@ max-width: 540px;
 background:	#f1ebe1;
 align-items: center;
 justify-content: center;
+margin-top: 100px;
+
 `
 
 export const Heading = styled.h1`
@@ -88,15 +106,22 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
+export const ImgWrap = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+background: none;
+padding: 20px;
+padding-bottom: 0;
+`
 
 export const Img = styled.img`
-width: 130px;
-height: 200px;
-margin-top: 130px;
-padding-top: 30px;
+width: 125px;
+height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
+box-shadow: 10px 10px lightblue;
 
 @media screen and (max-width: 800px) {
     margin-top: 0;
@@ -122,6 +147,12 @@ color: #44624a;
   border: 4px solid #44624a;
   font-family: "Kano";
   line-height: 1.5;
+  }
+
+  @media screen and (max-width: 700px){
+    &-content {
+        width: 100%;
+        }
   }
 `
 export const ButtonLong = styled.button`

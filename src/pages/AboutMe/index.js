@@ -1,26 +1,24 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
-import AOS from 'aos'
 import 'aos/dist/aos.css'
-// import POPUP from 'reactjs-popup';
-// import 'reactjs-popup/dist/index.css';
 
-import { AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong} from './AboutMeElements'
+import { TitleWrap, Title, ImgWrap, AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong} from './AboutMeElements'
 
-import Placeholder from "../images/mePic.jpg"
+import Placeholder from "./images/mePic.jpg"
 
 const AboutMe = () => {
 
-    useEffect(() => {
-        AOS.init({ duration: 1200 });
-      }, [])
-
   return (
     <>
-    <AboutContainer id='aboutMe'>
+    <AboutContainer>
+    <TitleWrap>
+    <Title>ABOUT ME</Title>
+    </TitleWrap>
         <AboutWrapper>
                 <TextWrapper>
+                  <ImgWrap>
                 <Img src={Placeholder} />
+                </ImgWrap>
                 <Heading>"I'm Christine,"</Heading>
                 <SubHead><i>she/her or any pronouns</i></SubHead>
                     <AdjustBioContainer>

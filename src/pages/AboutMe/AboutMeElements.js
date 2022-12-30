@@ -1,9 +1,40 @@
 import styled from 'styled-components'
 import Popup from 'reactjs-popup';
 import SnailPot from "./images/snailPot.png";
+import Back from "./images/back.png";
 import DogPot from "./images/dogPot.png";
 import BunnyPot from "./images/bunnyPot.png";
 import monet from "./images/monet.png";
+
+export const BackButton = styled.button`
+outline: none;
+font-family: "Florentia";  
+font-size: 25px;
+font-weight: bold;
+letter-spacing: 5px;
+color: #44624a;
+transform: rotate(-90deg);
+
+border: none;
+background: URL(${Back});
+background-repeat: no-repeat;
+background-size: auto 60px;
+background-position: center;
+padding: 10px 40px; 
+
+display: block;
+float: top;
+`
+export const ButtonWrap = styled.div`
+width: 60px;
+height: 200px;
+background: #8ba888;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 20px 10px #f1ebe1;
+float:left;
+`
 
 export const TitleWrap = styled.div`
 width: 100px;
@@ -20,8 +51,8 @@ export const Title = styled.h1`
 font-family: "Florentia";  
 font-weight: bold;
 writing-mode: vertical-rl;
-text-orientation: sideways;
 transform: rotate(180deg);
+text-orientation: sideways;
 letter-spacing: 5px;
 color: #fff;
 `

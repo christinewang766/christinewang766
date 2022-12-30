@@ -22,6 +22,11 @@ const FrontHome = () => {
                 <Button to="turnips" 
                 onMouseEnter={onHover} 
                 onMouseLeave={onHover}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
                 >Say hi<br></br>to Turnips
                 {hover ? <PigIcon /> : <WaveIcon />}
                 </Button>

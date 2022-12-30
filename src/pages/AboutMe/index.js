@@ -1,16 +1,23 @@
 import React from 'react'
 
 import 'aos/dist/aos.css'
+import {useNavigate} from 'react-router-dom'
 
-import { TitleWrap, Title, ImgWrap, AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong} from './AboutMeElements'
+import { BackButton, ButtonWrap, TitleWrap, Title, ImgWrap, AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong} from './AboutMeElements'
 
 import Placeholder from "./images/mePic.jpg"
+import ScrollToTop from '../../components/ScrollToTop'
 
 const AboutMe = () => {
+  let navigate = useNavigate();
 
   return (
     <>
+    <ScrollToTop />
     <AboutContainer>
+      <ButtonWrap>
+    <BackButton onClick={() => navigate(-1) }>HOME</BackButton>
+    </ButtonWrap>
     <TitleWrap>
     <Title>ABOUT ME</Title>
     </TitleWrap>

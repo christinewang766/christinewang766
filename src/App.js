@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SigninPage from './pages/signin';
 import AboutMe from './pages/AboutMe';
 import Home from './pages';
 import './App.css';
@@ -13,6 +13,7 @@ function App() {
     <Router>
       <Routes>
       <Route exact path='/' element={<Home />}></Route>
+      <Route exact path='/signin' element={<SigninPage />}></Route>
       <Route exact path='/about-me' element={<AboutMe />}></Route>
       </Routes>
     </Router>

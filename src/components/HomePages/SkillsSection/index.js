@@ -1,15 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Languages from './images/languages.png'
 import Library from './images/library.png'
 import DevTool from './images/devTool.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import { SkillsContainer, SkillsWrapper, SkillsH1, SkillsCard, SkillsIcon, SkillsH2, SkillsP, SkillsPWrap } from './SkillsElements'
 
 const Skills = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1200, once:true });
+  }, [])
+
+
   return (
     <>
       <SkillsContainer id="projects">
-        <SkillsH1>Skills</SkillsH1>
+        <SkillsH1 data-aos="fade-up">Skills</SkillsH1>
         <SkillsWrapper>
         <SkillsCard>
                 <SkillsIcon src={Languages} />

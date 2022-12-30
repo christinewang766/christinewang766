@@ -12,7 +12,7 @@ import Placeholder from "../images/placeholderProfile.jpg"
 const AboutSection = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 1200 });
+        AOS.init({ duration: 1200, once:true});
       }, [])
 
   return (

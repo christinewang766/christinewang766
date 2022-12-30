@@ -3,7 +3,8 @@ import FrontHome from '../components/HomePages/FrontHome';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Skills from '../components/HomePages/SkillsSection';
+import WorkSection from '../components/HomePages/WorkSection';
+import SkillsSection from '../components/HomePages/SkillsSection';
 import AboutSection from '../components/HomePages/AboutSection';
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
     <Navbar toggle={toggle} />
     <FrontHome />
     <AboutSection />
-    <Skills />
+    <SkillsSection />
+    <WorkSection />
     <Footer />
     </>
   )

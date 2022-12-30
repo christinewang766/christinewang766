@@ -37,6 +37,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 `
+
 export const FrontH1 = styled.h1`
 color: #fff;
 font-size: 95px;
@@ -44,12 +45,34 @@ text-align: center;
 font-family: "Playfair Display";
 text-shadow: #c0cfb2 1px 0 10px;
 
-@media screen and (max-width: 768px) {
-    font-size: 55px;
-}
-@media screen and (max-width: 480px) {
-    font-size: 42px;
-}
+overflow: hidden;
+white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(21, end) forwards, blink .8s infinite;
+  border-right: .12em solid #44624a;
+animation-delay: 1s;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #44624a; }
+  }
+
+
+  @media screen and (max-width: 1150px) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 25px;
+  }
 `
 
 export const FrontP = styled.p`

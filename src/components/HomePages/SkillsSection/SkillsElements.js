@@ -7,12 +7,12 @@ justify-content: center;
 align-items: center;
 background: #8ba888;
 
-@media screen and (max-width: 760px) {
-    height: 1100px;
-}
-
 @media screen and (max-width: 480px) {
     height: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+    height: 1400px; 
 }
 `
 export const SkillsWrapper = styled.div`

@@ -264,6 +264,10 @@ background-repeat: no-repeat;
 background-size: 65px 65px;
 background-position: center;
 padding: 30px 20px; 
+
+&:hover{
+  cursor: URL(${clawCursor}), auto;
+}
 `
 export const ButtonMedium = styled.button`
 outline: none;
@@ -281,6 +285,10 @@ background-repeat: no-repeat;
 background-size: 65px 65px;
 background-position: center;
 padding: 30px 20px; 
+
+&:hover{
+  cursor: URL(${clawCursor}), auto;
+}
 `
 export const ButtonShort = styled.button`
 outline: none;
@@ -298,6 +306,10 @@ background-repeat: no-repeat;
 background-size: 65px 75px;
 background-position: center;
 padding: 30px 20px; 
+
+&:hover{
+  cursor: URL(${clawCursor}), auto;
+}
 `
 export const EducationWrap = styled.div`
 height: auto;

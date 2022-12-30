@@ -5,6 +5,7 @@ import Home from './pages';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Aos from 'aos'
+import ScrollUpButton from './components/ScrollUpButton';
 
 function App() {
   Aos.init();
@@ -16,6 +17,7 @@ function App() {
       <Route exact path='/signin' element={<SigninPage />}></Route>
       <Route exact path='/about-me' element={<AboutMe />}></Route>
       </Routes>
+      <ScrollUpButton />
     </Router>
   );
 }

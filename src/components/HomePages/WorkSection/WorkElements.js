@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import clawCursor from './clawCursor.png'
 
 export const WorkContainer = styled.div`
 background: #c0cfb2;
@@ -54,13 +55,6 @@ padding-bottom: 20px;
     font-size: 2.5rem;
     
 }
-`
-
-export const JobDescription = styled.p`
-`
-
-export const TextBox = styled.div`
-
 `
 
 export const TitleWrap = styled.div`
@@ -123,18 +117,50 @@ export const Divider = styled.div`
     display:inline-block;
 `
 
-export const Button = styled.button`
-outline: none;
+export const Button1 = styled.button`
 font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
-margin: auto;
 font-family: "Kano";
 border: none;
-width: auto;
-height: auto;
 padding: 10px;
-box-shadow: 10px 10px 0 #aaaaaa;
+color: ${({ isOneSelected }) => (isOneSelected ? '#fff' : '	#000')};
+box-shadow: ${({ isOneSelected }) => (isOneSelected ? '10px 10px 0 #f1ebe1' : '10px 10px 0 #aaaaaa')};
+background: ${({ isOneSelected }) => (isOneSelected ? '#44624a' : '	#f1ebe1')};
+
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
+`
+export const Button2 = styled.button`
+font-weight: bold;
+letter-spacing: 2px;
+text-align: center;
+font-family: "Kano";
+border: none;
+padding: 10px;
+color: ${({ isTwoSelected }) => (isTwoSelected ? '#fff' : '	#000')};
+box-shadow: ${({ isTwoSelected }) => (isTwoSelected ? '10px 10px 0 #f1ebe1' : '10px 10px 0 #aaaaaa')};
+background: ${({ isTwoSelected }) => (isTwoSelected ? '#44624a' : '	#f1ebe1')};
+
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
+`
+export const Button3 = styled.button`
+font-weight: bold;
+letter-spacing: 2px;
+text-align: center;
+font-family: "Kano";
+border: none;
+padding: 10px;
+color: ${({ isThreeSelected }) => (isThreeSelected ? '#fff' : '	#000')};
+box-shadow: ${({ isThreeSelected }) => (isThreeSelected ? '10px 10px 0 #f1ebe1' : '10px 10px 0 #aaaaaa')};
+background: ${({ isThreeSelected }) => (isThreeSelected ? '#44624a' : '	#f1ebe1')};
+
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
 `
 
 export const BlockTabs = styled.div`

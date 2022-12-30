@@ -11,6 +11,7 @@ export const BackButton = styled.button`
 outline: none;
 font-family: "Florentia";  
 font-size: 25px;
+white-space: nowrap;
 font-weight: bold;
 letter-spacing: 5px;
 color: #44624a;
@@ -21,10 +22,7 @@ background: URL(${Back});
 background-repeat: no-repeat;
 background-size: auto 60px;
 background-position: center;
-padding: 10px 40px; 
-
-display: block;
-float: top;
+padding: 10px 15px; 
 
 &:hover{
   cursor: URL(${clawCursor}), auto;
@@ -38,7 +36,26 @@ display: flex;
 align-items: center;
 justify-content: center;
 box-shadow: 20px 10px #f1ebe1;
-float:left;
+
+@media screen and (max-width: 400px) {
+  width: 30px;
+height: 100px;
+}
+`
+export const ButtonNativeWrap = styled.div`
+background: #8ba888;
+display:flex;
+align-items: center;
+justify-content:center;
+width: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+margin-top:-10px;
+
+&:hover {
+  cursor: URL(${clawCursor}), auto;
+}
 `
 
 export const TitleWrap = styled.div`
@@ -48,8 +65,17 @@ background: #44624a;
 display: flex;
 align-items: center;
 justify-content: center;
-box-shadow: 20px 10px lightblue;
-float:left;
+white-space: nowrap;
+
+@media screen and (max-width: 400px) {
+  width: 50px;
+  height: 200px;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 40px;
+    padding:6px;
+    }
 `
 
 export const Title = styled.h1`
@@ -60,6 +86,13 @@ transform: rotate(180deg);
 text-orientation: sideways;
 letter-spacing: 5px;
 color: #fff;
+
+@media screen and (max-width: 400px) {
+  font-size: 20px;
+  }
+  @media screen and (max-width: 540px) {
+    font-size: 25px;
+    }
 `
 
 export const AboutContainer = styled.div`
@@ -71,23 +104,30 @@ background-position: center;
 display: flex;
 align-items: center;
 justify-content: center;
-color: #fff;
-}
+
+width:100%;
+height:100%;
 `
 
 export const AboutWrapper = styled.div`
 z-index: 1;
 height: 800px;
-max-width: 1100px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+@media screen and (max-width: 400px) {
+  height:900px;
+  }
 `
 
 export const TextWrapper = styled.div`
-max-width: 540px;
 background:	#f1ebe1;
-align-items: center;
 justify-content: center;
-margin-top: 100px;
 
+  @media screen and (max-width: 540px) {
+    width: 250px;
+    }
 `
 
 export const Heading = styled.h1`
@@ -103,6 +143,10 @@ text-align: center;
 @media screen and (max-width: 480px){
     font-size: 32px;
 }
+@media screen and (max-width: 400px) {
+  font-size: 25px;
+  }
+
 `
 
 export const SubHead = styled.div`
@@ -127,6 +171,7 @@ color: #44624a;
 export const AdjustBioWrap = styled.div`
 height: 150px;
 max-width: 1100px;
+display: block;
 `
 export const ABTitle = styled.h4`
 font-family: Kano;
@@ -157,10 +202,17 @@ height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
-box-shadow: 10px 10px lightblue;
+box-shadow: 10px 10px #c0cfb2;
 
 @media screen and (max-width: 800px) {
     margin-top: 0;
+}
+
+transition: all 0.2s ease-in-out;
+
+&:hover {
+    transform: scale(1.04);
+    transition: all 0.2s ease-in-out;
 }
 `
 export const StyledPopup = styled(Popup)`
@@ -179,7 +231,7 @@ color: #44624a;
   &-content {
   background: #f1ebe1;
   padding: 20px;
-  width: 50%;
+  width: 60%;
   border: 4px solid #44624a;
   font-family: "Kano";
   line-height: 1.5;
@@ -195,7 +247,6 @@ color: #44624a;
     &-content {
       width: 90%;
       } 
-  }
 `
 export const ButtonLong = styled.button`
 outline: none;
@@ -247,4 +298,56 @@ background-repeat: no-repeat;
 background-size: 65px 75px;
 background-position: center;
 padding: 30px 20px; 
+`
+export const EducationWrap = styled.div`
+height: auto;
+padding:15px;
+width: 400px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background:#f1ebe1;
+z-value: 5;
+
+  @media screen and (max-width: 540px) {
+    width: 250px;
+    }
+`
+
+export const Education = styled.h2`
+font-family: "Kano";  
+font-weight: bold;
+letter-spacing: 5px;
+color: 	#44624a;
+padding-bottom: 10px;
+z-value: 8;
+`
+export const EducationDate = styled.p`
+font-family: "Florentia"; 
+font-size: 15px;
+letter-spacing: 5px;
+font-style: italic;
+color: 	#8ba888;
+padding-bottom: 10px;
+z-value: 7;
+`
+export const EducationDetails = styled.h4`
+font-family: "Kano";  
+font-weight: bold;
+letter-spacing: 3px;
+text-align: center;
+color: #44624a;
+z-value: 6;
+`
+
+export const UBCImg = styled.img`
+max-width: 15%;
+z-value: -2;
+`
+export const UBCImgWrap = styled.div`
+z-value: -3;
+display: flex;
+align-items: center;
+justify-content: center;
 `

@@ -51,7 +51,7 @@ max-width:100%;
 margin-bottom: 10px;
 `
 export const SkillsH1 = styled.h1`
-font-size: 12rem;
+font-size: 10rem;
 color: #fff;
 font-family: "Playfair Display";
 

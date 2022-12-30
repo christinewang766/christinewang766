@@ -16,7 +16,7 @@ const Skills = () => {
 
   return (
     <>
-      <SkillsContainer id="projects">
+      <SkillsContainer id="skills">
         <SkillsH1 data-aos="fade-up">Skills</SkillsH1>
         <SkillsWrapper>
         <SkillsCard>

@@ -16,8 +16,8 @@ const FrontHome = () => {
             <VideoBackground autoPlay loop muted src={Video} type='video/mp4' />
         </FrontBackground>
         <FrontContent>
-            <FrontH1>Welcome to Christopolis</FrontH1>
-            <FrontP>Please hire me I'm desperate.</FrontP>
+            <FrontH1>Christine's Portfolio</FrontH1>
+            <FrontP>Welcome to my website</FrontP>
             <FrontBtnWrapper>
                 <Button to="turnips" 
                 onMouseEnter={onHover} 

@@ -51,9 +51,10 @@ max-width:100%;
 margin-bottom: 10px;
 `
 export const SkillsH1 = styled.h1`
-font-size: 10rem;
+font-size: 8rem;
 color: #fff;
 font-family: "Playfair Display";
+margin-top: 20px;
 
 @media screen and (max-width: 480px) {
     font-size: 2.5rem;

@@ -46,10 +46,11 @@ position: absolute;
 `
 
 export const Heading = styled.h1`
-font-size: 10rem;
+font-size: 8rem;
 color: #fff;
 font-family: "Playfair Display";
 padding-bottom: 20px;
+margin-top: -90px;
 
 @media screen and (max-width: 480px) {
     font-size: 2.5rem;

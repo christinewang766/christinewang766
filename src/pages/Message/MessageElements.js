@@ -1,17 +1,54 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import clawCursor from "./clawCursor.png";
+import Back from "./back.png";
 
 export const Container = styled.div`
 height: 880px;
 width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 background: linear-gradient(
     108deg,
     #44624a 0%,
     #8ba888 100%
 )
 `
-export const BackButton = styled(Link)`
+export const ButtonWrap = styled.div`
+width: 60px;
+height: 200px;
+background: #8ba888;
+display: flex;
+align-items: center;
+justify-content: center;
 
+@media screen and (max-width: 400px) {
+  width: 30px;
+height: 100px;
+}
+`
+
+export const BackButton = styled(Link)`
+outline: none;
+font-family: "Florentia";  
+font-size: 25px;
+white-space: nowrap;
+font-weight: bold;
+letter-spacing: 5px;
+color: #44624a;
+transform: rotate(-90deg);
+
+border: none;
+background: URL(${Back});
+background-repeat: no-repeat;
+background-size: auto 60px;
+background-position: center;
+padding: 10px 15px; 
+
+&:hover{
+  cursor: URL(${clawCursor}), auto;
+}
 `
 
 export const FormWrap = styled.div`
@@ -66,6 +103,7 @@ grid-template-columns: auto auto;
 align-items: center;
 justify-content: center;
 width:100%;
+margin-left: 20px;
 `
 export const BottomWrap = styled.div`
 display: flex;
@@ -102,7 +140,10 @@ border: none;
 border-radius: 4px;
 background: #fff;
 color: #000;
-width: 90%;
+width: 70%;
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
 `
 export const Input = styled.input`
 padding: 12px 12px;
@@ -112,6 +153,9 @@ border-radius: 4px;
 background: #fff;
 color: #000;
 width: 90%;
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
 `
 export const MessageInput = styled.textarea`
 padding: 12px 12px;
@@ -126,13 +170,16 @@ resize: none;
 width: 90%;
 height: 120px;
 overflow-wrap: break-word;
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
 `
 export const FormButton = styled.button`
 border-radius: 50px;
-background: #44624a;
+background:  ${({isVisible}) => (isVisible ? '#f1ebe1' : '#44624a')};
 white-space: nowrap;
 padding: 10px 22px;
-color: #fff;
+color: 	#f1ebe1;
 font-size: 16px;
 font-weight: bold;
 letter-spacing: 2px;
@@ -144,9 +191,14 @@ width: 120px;
 text-align: center;
 font-family: "Kano";
 
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background #c0cfb2;
-    color: #000;
+&:hover{
+    cursor: URL(${clawCursor}), auto;
 }
+}
+`
+export const Warning = styled.p`
+font-size: 12px;
+padding-bottom: 10px;
+padding-top: 10px;
+color:  ${({isVisible}) => (isVisible ? 'darkred' : '#f1ebe1')};
 `

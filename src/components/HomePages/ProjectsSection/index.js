@@ -17,7 +17,7 @@ const Projects = () => {
         <Header data-aos="fade-up">Projects</Header>
         <ProjectsWrapper>
 
-        <ProjectsCard>
+        <ProjectsCard data-aos="fade-up">
           <ImgWrap1>
             <DescriptionWrap>
               <Description>A website to experiment with design and represent who I am as a (prospective) computer scientist. Serves as a visual resume.</Description>
@@ -27,7 +27,7 @@ const Projects = () => {
           <Title>Portfolio Website</Title>
           </ProjectsCard>
           
-          <ProjectsCard>
+          <ProjectsCard data-aos="fade-up">
           <ImgWrap2>
             <DescriptionWrap>
               <Description>A Java-based flashcard application to help students study. The user can create, save, and edit card decks as well as study in a cute UI.</Description>

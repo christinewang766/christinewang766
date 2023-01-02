@@ -86,7 +86,8 @@ height: 100%;
 
 &.active {
     transition: all 0.2s ease-in-out;
-    color: #8ba888;
+    color: #c0cfb2;
+    text-shadow: -1px -1px 0 #44624a, 1px -1px 0 #44624a, -1px 1px 0 #44624a, 1px 1px 0 #44624a;
     border-bottom: 3px solid #c0cfb2;
 }
 `

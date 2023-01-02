@@ -20,21 +20,21 @@ const Skills = () => {
         <SkillsH1 data-aos="fade-up">Skills</SkillsH1>
         <SkillsWrapper>
         <SkillsCard>
-                <SkillsIcon src={Languages} />
+                <SkillsIcon data-aos="fade-up" src={Languages} />
                 <SkillsH2>Languages</SkillsH2>
                 <SkillsPWrap>
                 <SkillsP>Java, Racket, C++, CSS3, HTML5, JavaScript</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
             <SkillsCard>
-                <SkillsIcon src={Library} />
+                <SkillsIcon data-aos="fade-up" src={Library} />
                 <SkillsH2>Libraries</SkillsH2>
                 <SkillsPWrap>
                 <SkillsP>Java Swing, React (styled-components, bootstrap, Router, axios)</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
             <SkillsCard>
-                <SkillsIcon src={DevTool} />
+                <SkillsIcon data-aos="fade-up" src={DevTool} />
                 <SkillsH2>Developement Tools</SkillsH2>
                 <SkillsPWrap>
                 <SkillsP> Intellij Idea, DrRacket, Git, Photoshop, Microsoft Office, Google Workspace, Overleaf, Visual Studio Code</SkillsP>

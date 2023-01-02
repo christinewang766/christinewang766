@@ -24,7 +24,7 @@ const AboutSection = () => {
                 <TextWrapper> 
                     <Heading data-aos="fade-left" data-aos-easing="linear">"Hey, I'm Christine,"</Heading>
                    
-                    <Subtitle data-aos="fade-left" data-aos-easing="linear">Inquisitive, creative, and analytical computer science undergraduate, with a strong foundation in math, logic, and object-oriented programming. Seeking a challenge to grow and push my capabilities to its fullest.<br></br><br></br>Also, I have a <b>STRONG</b> interest in animal-shaped pots!</Subtitle>
+                    <Subtitle data-aos="fade-left" data-aos-easing="linear">Inquisitive, creative, and analytical computer science undergraduate, with a strong foundation in math, logic, and object-oriented programming. Experienced in Java, Racket, C++, JavaScript, HTML, and CSS.<br></br><br></br>Also, I have a <b>STRONG</b> interest in animal-shaped pots!</Subtitle>
                     <Button lightText={true} to="/about-me">Want to<br></br>know more?</Button>
                 </TextWrapper>
                 <ImgWrap>

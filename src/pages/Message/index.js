@@ -20,16 +20,6 @@ const Message = () => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [note, setNote] = useState("");
-
-  const validate = () => {
-    if (!disableSubmit) {
-      return !((fname !== "") & (lname !== "") & (message !== "") & (note !== ""));
-
-    } else {
-      return true;
-    }
-  };
-
   const [disableSubmit, setDisableSubmit] = useState(true);
 
   function handleSubmit(e) {
@@ -42,11 +32,12 @@ const Message = () => {
     setNote('');
     setMessage('');
     window.grecaptcha.reset();
+    setDisableSubmit(true);
     Swal.fire({
       icon: 'success',
       title: 'Success!',
-      text: 'Christine will get back to you shortly :)'
-    })
+      text: 'Christine will get back to you shortly :)'})
+
   }
 
   const SendToDiscord = async () => {
@@ -82,14 +73,15 @@ const Message = () => {
       <ScrollToTop />
     <Container>
       <ButtonWrap>
-        <BackButton onClick={() => {window.location.reload();
+        <BackButton onClick={() => {
+          window.location.reload();
           navigate(-1);}}>GO BACK</BackButton>
       </ButtonWrap>
       <FormWrap>
         <FormContent>
           <Form onSubmit={(e) => {
             e.preventDefault();
-            SendToDiscord();
+            handleSubmit(e);
           }}>
             <FormH1>Contact &nbsp;Christine!</FormH1>
             <BothNameWrap>
@@ -152,8 +144,9 @@ const Message = () => {
                 sitekey="6LdWc8AjAAAAAJbo1iD4uYQuE6RqKXm4zrUla7ck"
                 onChange={useCallback(() => setDisableSubmit(false))}
               />
-              <Warning isVisible={validate()}> Hey! You're not done the form yet, don't think about submitting! </Warning>
-              <FormButton isVisible={validate()} type="button" disabled={validate()} onClick={handleSubmit}>Submit</FormButton>
+
+              <Warning isVisible={disableSubmit}> Hey! You're not done the form yet, don't think about submitting! </Warning>
+              <FormButton isVisible={disableSubmit} type="submit" disabled={disableSubmit}>Submit</FormButton>
             </BottomWrap>
           </Form>
         </FormContent>

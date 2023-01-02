@@ -189,7 +189,7 @@ transition: all 0.2s ease-in-out;
 text-decoration: none;
 width: 120px;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 
 &:hover{
     cursor: URL(${clawCursor}), auto;

@@ -79,6 +79,6 @@ max-width: 160px;
 export const SkillsP = styled.p`
 font-size: 1rem;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 color: #fff;
 `

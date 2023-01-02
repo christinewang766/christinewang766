@@ -54,9 +54,10 @@ export const Subtitle = styled.p`
 max-width: 460px;
 margin-bottom: 35px;
 padding: 20px;
-font-family: "Kano";
-font-size: 18px;
-line-height: 24px;
+font-family: "Lato";
+font-size: 22px;
+line-height: 26px;
+letter-spacing: 1px;
 color: #fff;
 `
 

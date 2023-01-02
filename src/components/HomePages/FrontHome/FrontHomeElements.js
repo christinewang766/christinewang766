@@ -81,7 +81,7 @@ color: #44624a;
 font-size: 30px;
 text-align: center;
 max-width: 600px;
-font-family: "Kano";
+font-family: "Lato";
 font-style: italic;
 
 @media screen and (max-width: 768px) {

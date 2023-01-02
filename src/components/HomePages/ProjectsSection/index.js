@@ -21,7 +21,7 @@ const Projects = () => {
           <ImgWrap1>
             <DescriptionWrap>
               <Description>A website to experiment with design and represent who I am as a (prospective) computer scientist. Serves as a visual resume.</Description>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore to="/projects">Read More</ReadMore>
             </DescriptionWrap>
           </ImgWrap1>
           <Title>Portfolio Website</Title>
@@ -31,7 +31,7 @@ const Projects = () => {
           <ImgWrap2>
             <DescriptionWrap>
               <Description>A Java-based flashcard application to help students study. The user can create, save, and edit card decks as well as study in a cute UI.</Description>
-            <ReadMore>Read More</ReadMore>
+            <ReadMore to="/projects">Read More</ReadMore>
             </DescriptionWrap>
           </ImgWrap2>
           <Title>Cutesy Cards</Title>

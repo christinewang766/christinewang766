@@ -23,14 +23,14 @@ const Skills = () => {
                 <SkillsIcon src={Languages} />
                 <SkillsH2>Languages</SkillsH2>
                 <SkillsPWrap>
-                <SkillsP> Java, Racket, C++, CSS, HTML, JavaScript</SkillsP>
+                <SkillsP>Java, Racket, C++, CSS3, HTML5, JavaScript</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
             <SkillsCard>
                 <SkillsIcon src={Library} />
                 <SkillsH2>Libraries</SkillsH2>
                 <SkillsPWrap>
-                <SkillsP>Java Swing, React (styled-components, bootstrap, Router, aos)</SkillsP>
+                <SkillsP>Java Swing, React (styled-components, bootstrap, Router, axios)</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
             <SkillsCard>

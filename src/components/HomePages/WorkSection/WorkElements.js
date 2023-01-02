@@ -64,12 +64,12 @@ align-items: center;
 `
 
 export const TitleJob = styled.h2`
-font-family: "Kano";
+font-family: "Lato";
 padding: 12px;
 color: 	#44624a;
 `
 export const Location = styled.h4`
-font-family: "Kano";
+font-family: "Lato";
 color: #8ba888;
 `
 
@@ -77,7 +77,7 @@ export const Date = styled.h4`
 padding: 20px;
 padding-bottom: 0;
 color: #8ba888;
-font-family: "Kano";
+font-family: "Lato";
 font-style: italic;
 letter-spacing: 2px;
 
@@ -107,7 +107,7 @@ export const ListItem = styled.li`
 list-style: circle solid;
 list-style-position: inside;
 margin-bottom: 15px; 
-font-family: "Kano";
+font-family: "Lato";
 // color: 	#44624a;
 color: red; //TODO
 `
@@ -122,7 +122,7 @@ export const Button1 = styled.button`
 font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 padding: 10px;
 color: ${({ isOneSelected }) => (isOneSelected ? '#fff' : '	#000')};
@@ -137,7 +137,7 @@ export const Button2 = styled.button`
 font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 padding: 10px;
 color: ${({ isTwoSelected }) => (isTwoSelected ? '#fff' : '	#000')};
@@ -152,7 +152,7 @@ export const Button3 = styled.button`
 font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 padding: 10px;
 color: ${({ isThreeSelected }) => (isThreeSelected ? '#fff' : '	#000')};

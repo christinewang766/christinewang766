@@ -114,7 +114,7 @@ margin-top: -20px;
 
 export const Title = styled.h2`
 font-size: 1.5rem;
-font-family: "Kano";
+font-family: "Lato";
 color: #44624a;
 font-weight: 2000;
 letter-spacing: 2px;
@@ -136,7 +136,7 @@ opacity: 0;
 export const Description = styled.p`
 font-size: 1.2rem;
 text-align: center;
-font-family: "Kano";
+font-family: "Lato";
 font-weight: 1000;
 letter-spacing: 1px;
 color: #fff;
@@ -158,7 +158,7 @@ color: #fff;
 font-size: 16px;
 font-weight: bold;
 letter-spacing: 2px;
-font-family: "Kano";
+font-family: "Lato";
 outline: none;
 border: none;
 transition: all 0.2s ease-in-out;

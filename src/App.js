@@ -6,6 +6,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Aos from 'aos'
 import ScrollUpButton from './components/ScrollUpButton';
+import Projects from './pages/Projects';
 
 function App() {
   Aos.init();
@@ -16,6 +17,7 @@ function App() {
       <Route exact path='/' element={<Home />}></Route>
       <Route exact path='/message' element={<Message />}></Route>
       <Route exact path='/about-me' element={<AboutMe />}></Route>
+      <Route exact path='/projects' element={<Projects />}></Route>
       </Routes>
       <ScrollUpButton />
     </Router>

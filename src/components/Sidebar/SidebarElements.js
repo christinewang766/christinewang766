@@ -8,7 +8,7 @@ import openLetter from "./images/openLetter.png";
 
 export const SidebarContainer = styled.aside`
 position: fixed;
-font-family:'Kano';
+font-family:'Lato';
 z-index: 999;
 background: URL(${pochita});
 background-repeat: no-repeat;

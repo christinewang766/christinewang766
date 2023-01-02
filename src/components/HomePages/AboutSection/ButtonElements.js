@@ -8,7 +8,7 @@ white-space: nowrap;
 padding: ${({big}) => (big ? '14 px 48px' : '12px 30px')};
 font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
 outline: none;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 display: flex;
 justify-content: center;

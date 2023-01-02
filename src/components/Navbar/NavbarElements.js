@@ -11,7 +11,7 @@ margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-family:'Kano';
+font-family:'Lato';
 font-size: 1.5rem;
 position: sticky;
 top: 0;

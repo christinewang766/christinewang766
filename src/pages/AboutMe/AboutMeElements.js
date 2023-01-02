@@ -98,7 +98,7 @@ color: #fff;
 export const AboutContainer = styled.div`
 background: url(${monet});
 background-repeat: no-repeat;
-backgroundSize: fill;
+background-size: fill;
 background-position: center;
 
 display: flex;
@@ -154,7 +154,7 @@ padding: 20px;
 padding-bottom: 0;
 padding-top: 0px;
 margin-bottom: 24px;
-font-family:'Kano';
+font-family:'Lato';
 font-size: 20px;
 color: #8ba888;
 text-align: center;
@@ -174,7 +174,7 @@ max-width: 1100px;
 display: block;
 `
 export const ABTitle = styled.h4`
-font-family: Kano;
+font-family: Lato;
 padding: 10px;
 padding-bottom: 30;
 text-align: center;
@@ -233,7 +233,7 @@ color: #44624a;
   padding: 20px;
   width: 60%;
   border: 4px solid #44624a;
-  font-family: "Kano";
+  font-family: "Lato";
   line-height: 1.5;
   }
 
@@ -255,7 +255,7 @@ font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
 margin: auto;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 display: block;
 float: left;
@@ -276,7 +276,7 @@ color: #000;
 letter-spacing: 2px;
 text-align: center;
 margin: auto;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 display: block;
 float: left;
@@ -297,7 +297,7 @@ font-weight: bold;
 letter-spacing: 2px;
 text-align: center;
 margin: auto;
-font-family: "Kano";
+font-family: "Lato";
 border: none;
 display: block;
 float: left;
@@ -328,7 +328,7 @@ z-value: 5;
 `
 
 export const Education = styled.h2`
-font-family: "Kano";  
+font-family: "Lato";  
 font-weight: bold;
 letter-spacing: 5px;
 color: 	#44624a;
@@ -345,7 +345,7 @@ padding-bottom: 10px;
 z-value: 7;
 `
 export const EducationDetails = styled.h4`
-font-family: "Kano";  
+font-family: "Lato";  
 font-weight: bold;
 letter-spacing: 3px;
 text-align: center;

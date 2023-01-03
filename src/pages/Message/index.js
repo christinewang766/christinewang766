@@ -149,7 +149,7 @@ const Message = () => {
                   />
                 </CaptchaWrap>
                 <Warning isVisible={disableSubmit}> Hey! You're not done the form yet, don't think about submitting! </Warning>
-                <Warning>!!! TEST IF UPDATED !!!</Warning>
+                <h3>!!! TEST IF UPDATED !!!</h3>
                 <FormButton isVisible={disableSubmit} type="submit" disabled={disableSubmit}>Submit</FormButton>
               </BottomWrap>
             </Form>

@@ -59,8 +59,8 @@ const Message = () => {
     };
 
     try {
-      const data = await axios.post(
-        "https://discord.com/api/webhooks/1059974716137406616/IG2I5gwZJKVRbDLU0qXOAflnDkrrgEZyd6Px-zV3kUcVWrgJKcAK5SUXzOvJs_sqeBWa",
+      const link = "https://discord.com/api/webhooks/1059974716137406616/IG2I5gwZJKVRbDLU0qXOAflnDkrrgEZyd6Px-zV3kUcVWrgJKcAK5SUXzOvJs_"; // missing "sqeBWa" at the end
+      const data = await axios.post(link + "sqeBWa",
         body
       );
       console.log(data);

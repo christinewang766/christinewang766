@@ -60,7 +60,7 @@ const Message = () => {
 
     try {
       const data = await axios.post(
-        "https://discord.com/api/webhooks/1059968584102707261/6scoCl_WKEfByWnlowMqQuo4-uIALgnbT5ENC9-pJ5DtEXMp3PwhxHZnvPb8PPhh3ojQ",
+        "https://discord.com/api/webhooks/1059970828080517251/bGkS21pTIPmKZOs9_HeRPEZ9ngHUyQ68hINRUvzVzbdT-UdLpbQxgvFTcQtGLukd5ZD_",
         body
       );
       console.log(data);

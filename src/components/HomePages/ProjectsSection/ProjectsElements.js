@@ -107,8 +107,8 @@ color: #8ba888;
 font-family: "Playfair Display";
 padding-bottom: 30px;
 margin-top: -20px;
-@media screen and (max-width: 480px) {
-    font-size: 2.5rem;
+@media screen and (max-width: 500px) {
+    font-size: 4.5rem;
 }
 `
 

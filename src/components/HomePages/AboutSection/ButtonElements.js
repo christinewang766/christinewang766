@@ -5,7 +5,6 @@ import AoxPot from "../images/aoxPot.png";
 
 export const Button = styled(Link)`
 white-space: nowrap;
-padding: ${({big}) => (big ? '14 px 48px' : '12px 30px')};
 font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
 outline: none;
 font-family: "Lato";
@@ -18,7 +17,7 @@ background-repeat: no-repeat;
 background-size: 150px 150px;
 background-position: center;
 white-space: nowrap;
-padding: 60px 0; 
+padding: 60px 50px; 
 color: ${({lightText}) => (lightText ? '#fff' : '#000')};
 
 &:hover {

@@ -3,7 +3,7 @@ import React, {useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import { AboutContainer, AboutWrapper, AboutRow, TextWrapper, Heading, Subtitle, ImgWrap, Img} from './AboutElements'
+import { AboutContainer, AboutWrapper, TextWrapper, Heading, Description, ImgWrap, Img} from './AboutElements'
 import { Button } from './ButtonElements'
 
 
@@ -18,20 +18,16 @@ const AboutSection = () => {
   return (
     <>
     <AboutContainer id='about'>
-   
-        <AboutWrapper>
-            <AboutRow>
+            <AboutWrapper>
                 <TextWrapper> 
                     <Heading data-aos="fade-left" data-aos-easing="linear">"Hey, I'm Christine,"</Heading>
-                   
-                    <Subtitle data-aos="fade-left" data-aos-easing="linear">Inquisitive, creative, and analytical computer science undergraduate, with a strong foundation in math, logic, and object-oriented programming. Experienced in Java, Racket, C++, JavaScript, HTML, and CSS.<br></br><br></br>Also, I have a <b>STRONG</b> interest in animal-shaped pots!</Subtitle>
+                    <Description data-aos="fade-left" data-aos-easing="linear">Inquisitive, creative, and analytical computer science undergraduate, with a strong foundation in math, logic, and object-oriented programming. Experienced in Java, Racket, C++, JavaScript, HTML, and CSS.<br></br><br></br>Also, I have a <b>STRONG</b> interest in animal-shaped pots!</Description>
                     <Button lightText={true} to="/about-me">Want to<br></br>know more?</Button>
                 </TextWrapper>
                 <ImgWrap>
                 <Img data-aos="fade-up" src={Placeholder} />
                 </ImgWrap>
-            </AboutRow>
-        </AboutWrapper>
+            </AboutWrapper>
     </AboutContainer>
     </>
   );

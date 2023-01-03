@@ -1,13 +1,13 @@
 import React, { useState, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Container, BackButton, FormWrap, BottomWrap, FormContent, Form, FormH1, BothNameWrap, NameWrap, LabelWrap, FormLabel, RequiredAster, NameInput, Input, MessageInput, FormButton, Warning, ButtonWrap } from './MessageElements'
+import { Container, BackButton, FormWrap, BottomWrap, FormContent, Form, FormH1, BothNameWrap, NameWrap, LabelWrap, FormLabel, RequiredAster, NameInput, Input, MessageInput, FormButton, Warning, ButtonWrap, CaptchaWrap } from './MessageElements'
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 import ScrollToTop from '../../components/ScrollToTop';
 import Swal from 'sweetalert2'
 
 const Message = () => {
-  
+
   const [formData, setFormData] = useState(null);
   const [message, setMessage] = useState({
     message: ""
@@ -36,7 +36,8 @@ const Message = () => {
     Swal.fire({
       icon: 'success',
       title: 'Success!',
-      text: 'Christine will get back to you shortly :)'})
+      text: 'Christine will get back to you shortly :)'
+    })
 
   }
 
@@ -71,87 +72,89 @@ const Message = () => {
   return (
     <>
       <ScrollToTop />
-    <Container>
-      <ButtonWrap>
-        <BackButton onClick={() => {
-          window.location.reload();
-          navigate(-1);}}>GO BACK</BackButton>
-      </ButtonWrap>
-      <FormWrap>
-        <FormContent>
-          <Form onSubmit={(e) => {
-            e.preventDefault();
-            handleSubmit(e);
-          }}>
-            <FormH1>Contact &nbsp;Christine!</FormH1>
-            <BothNameWrap>
-              <NameWrap>
+      <Container>
+        <ButtonWrap>
+          <BackButton onClick={() => {
+            window.location.reload();
+            navigate(-1);
+          }}>GO BACK</BackButton>
+        </ButtonWrap>
+        <FormWrap>
+          <FormContent>
+            <Form onSubmit={(e) => {
+              e.preventDefault();
+              handleSubmit(e);
+            }}>
+              <FormH1>Contact &nbsp;Christine!</FormH1>
+              <BothNameWrap>
+                <NameWrap>
+                  <LabelWrap>
+                    <FormLabel for="fname">First Name</FormLabel>
+                    <RequiredAster>&nbsp;*</RequiredAster>
+                  </LabelWrap>
+                  <NameInput type="text" name="fname" placeholder="Your first name.." value={fname} required onChange={(e) => {
+                    const value = e.target.value;
+                    setFormData({ ...formData, fname: value });
+                    setFName(value);
+                  }}>
+                  </NameInput>
+                </NameWrap>
+
+                <NameWrap>
+                  <LabelWrap>
+                    <FormLabel for="lname">Last Name</FormLabel>
+                    <RequiredAster>&nbsp;*</RequiredAster>
+                  </LabelWrap>
+                  <NameInput type="text" name="lname" placeholder="Your last name.." value={lname} required onChange={(e) => {
+                    const value = e.target.value;
+                    setFormData({ ...formData, lname: value });
+                    setLName(value);
+                  }}>
+                  </NameInput>
+                </NameWrap>
+              </BothNameWrap>
+
+              <BottomWrap>
                 <LabelWrap>
-                  <FormLabel for="fname">First Name</FormLabel>
+                  <FormLabel for="email">Email</FormLabel>
                   <RequiredAster>&nbsp;*</RequiredAster>
                 </LabelWrap>
-                <NameInput type="text" name="fname" placeholder="Your first name.." value={fname} required onChange={(e) => {
+                <Input type="text" name="email" placeholder="Your email.." value={email} required onChange={(e) => {
                   const value = e.target.value;
-                  setFormData({ ...formData, fname: value });
-                  setFName(value);
-                }}>
-                </NameInput>
-              </NameWrap>
+                  setFormData({ ...formData, email: value });
+                  setEmail(value);
+                }}></Input>
 
-              <NameWrap>
+                <FormLabel for="phoneNumber">Phone Number</FormLabel>
+                <Input type="text" name="phoneNumber" placeholder="Your phone number.." value={phoneNumber} onChange={(e) => {
+                  const value = e.target.value;
+                  setFormData({ ...formData, phoneNumber: value });
+                  setPhoneNumber(value);
+                }}></Input>
+
                 <LabelWrap>
-                  <FormLabel for="lname">Last Name</FormLabel>
+                  <FormLabel for="note">Message</FormLabel>
                   <RequiredAster>&nbsp;*</RequiredAster>
                 </LabelWrap>
-                <NameInput type="text" name="lname" placeholder="Your last name.." value={lname} required onChange={(e) => {
+                <MessageInput type="text" name="note" placeholder="Your message.." value={note} required onChange={(e) => {
                   const value = e.target.value;
-                  setFormData({ ...formData, lname: value });
-                  setLName(value);
-                }}>
-                </NameInput>
-              </NameWrap>
-            </BothNameWrap>
-
-            <BottomWrap>
-              <LabelWrap>
-                <FormLabel for="email">Email</FormLabel>
-                <RequiredAster>&nbsp;*</RequiredAster>
-              </LabelWrap>
-              <Input type="text" name="email" placeholder="Your email.." value={email} required onChange={(e) => {
-                const value = e.target.value;
-                setFormData({ ...formData, email: value });
-                setEmail(value);
-              }}></Input>
-
-              <FormLabel for="phoneNumber">Phone Number</FormLabel>
-              <Input type="text" name="phoneNumber" placeholder="Your phone number.." value={phoneNumber} onChange={(e) => {
-                const value = e.target.value;
-                setFormData({ ...formData, phoneNumber: value });
-                setPhoneNumber(value);
-              }}></Input>
-
-              <LabelWrap>
-                <FormLabel for="note">Message</FormLabel>
-                <RequiredAster>&nbsp;*</RequiredAster>
-              </LabelWrap>
-              <MessageInput type="text" name="note" placeholder="Your message.." value={note} required onChange={(e) => {
-                const value = e.target.value;
-                setFormData({ ...formData, message: value });
-                setNote(value);
-              }}></MessageInput>
-
-              <ReCAPTCHA
-                sitekey="6LdWc8AjAAAAAJbo1iD4uYQuE6RqKXm4zrUla7ck"
-                onChange={useCallback(() => setDisableSubmit(false))}
-              />
-
-              <Warning isVisible={disableSubmit}> Hey! You're not done the form yet, don't think about submitting! </Warning>
-              <FormButton isVisible={disableSubmit} type="submit" disabled={disableSubmit}>Submit</FormButton>
-            </BottomWrap>
-          </Form>
-        </FormContent>
-      </FormWrap>
-    </Container>
+                  setFormData({ ...formData, message: value });
+                  setNote(value);
+                }}></MessageInput>
+                <CaptchaWrap>
+                  <ReCAPTCHA
+                    // sitekey="6LdWc8AjAAAAAJbo1iD4uYQuE6RqKXm4zrUla7ck"s used with localhost
+                    sitekey="6Lfc3csjAAAAAAI6G1ZDbtK62iCqLTT0ZTH_d4xX"
+                    onChange={useCallback(() => setDisableSubmit(false))}
+                  />
+                </CaptchaWrap>
+                <Warning isVisible={disableSubmit}> Hey! You're not done the form yet, don't think about submitting! </Warning>
+                <FormButton isVisible={disableSubmit} type="submit" disabled={disableSubmit}>Submit</FormButton>
+              </BottomWrap>
+            </Form>
+          </FormContent>
+        </FormWrap>
+      </Container>
     </>
   );
 }

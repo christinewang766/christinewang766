@@ -22,11 +22,6 @@ background: #8ba888;
 display: flex;
 align-items: center;
 justify-content: center;
-
-@media screen and (max-width: 400px) {
-  width: 30px;
-height: 100px;
-}
 `
 
 export const BackButton = styled(Link)`
@@ -87,6 +82,7 @@ flex-direction: column;
 
 @media screen and (max-width: 400px) {
     padding: 32px 32px;
+    max-width: 300px;
 }
 `
 export const FormH1 = styled.h1`
@@ -201,4 +197,10 @@ font-size: 12px;
 padding-bottom: 10px;
 padding-top: 10px;
 color:  ${({isVisible}) => (isVisible ? 'darkred' : '#f1ebe1')};
+`
+export const CaptchaWrap = styled.div`
+@media screen and (max-width: 400px) {
+    transform:scale(0.65);
+transform-origin: 0 0;
+}
 `

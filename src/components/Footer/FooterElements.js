@@ -32,6 +32,7 @@ export const WebsiteRights = styled.small`
 color: #fff;
 margin-bottom: 16px;
 padding-top: 20px;
+font-family: "Lato";
 `
 export const SocialIcons = styled.div`
 display: flex;
@@ -45,6 +46,7 @@ font-size: 24px;
 `
 export const Message = styled(Link)`
 color: white;
+font-family: "Lato";
 padding-top: 10px;
 `
 export const YouFoundMeWrap = styled.div`

@@ -3,39 +3,38 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
 color: #fff;
 background: #44624a;
+display: flex;
+justify-content: center;
+align-items: center;
 
 @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    height: 100%;
 }
 `
 
 export const AboutWrapper = styled.div`
 display: grid;
-z-index: 1;
-height: 860px;
-width: 100%;
-max-width: 1100px;
-margin-right: auto;
-margin-left: auto;
-padding: 0 24px;
-justify-content: center;
-`
-
-export const AboutRow = styled.div`
-display: grid;
-grid-auto-columns: minmax(auto, 1fr);
+grid-template-columns: auto auto;
 align-items: center;
-grid-template-areas: 'col2 col1';
+justify-content: center;
+padding-top: 100px;
+padding-bottom: 100px;
 
 @media screen and (max-width: 768px) {
-    grid-template-areas: 'col1' 'col2';
+    grid-template-columns: auto;
 }
 `
 
 export const TextWrapper = styled.div`
 max-width: 540px;
 padding-top: 0;
+padding-left: 20px;
+padding-right: 20px;
 padding-bottom: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 `
 
 export const Heading = styled.h1`
@@ -47,10 +46,10 @@ color: #f7f8fa;
 font-family: "Playfair Display";
 
 @media screen and (max-width: 480px){
-    font-size: 32px;
+    font-size: 32px; 
 }
 `
-export const Subtitle = styled.p`
+export const Description = styled.p`
 max-width: 460px;
 margin-bottom: 35px;
 padding: 20px;
@@ -63,7 +62,19 @@ color: #fff;
 
 export const ImgWrap = styled.div`
 max-width: 555px;
-height: 100;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+@media screen and (max-width: 600px) {
+    max-width: 450px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 400px) {
+    max-width: 450px;
+    margin-left: 0;
+}
 `
 
 export const Img = styled.img`

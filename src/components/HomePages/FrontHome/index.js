@@ -19,7 +19,7 @@ const FrontHome = () => {
             <FrontH1>Christine's Portfolio</FrontH1>
             <FrontP>Welcome to my website</FrontP>
             <FrontBtnWrapper>
-                <Button to="turnips" 
+                <Button to="contact" 
                 onMouseEnter={onHover} 
                 onMouseLeave={onHover}
                 smooth={true}

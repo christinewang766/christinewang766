@@ -24,7 +24,7 @@ const Projects = () => {
             <ReadMore to="/projects">Read More</ReadMore>
             </DescriptionWrap>
           </ImgWrap1>
-          <Title>Portfolio Website</Title>
+          <Title to="/projects">Portfolio Website</Title>
           </ProjectsCard>
           
           <ProjectsCard data-aos="fade-up">
@@ -34,7 +34,7 @@ const Projects = () => {
             <ReadMore to="/projects">Read More</ReadMore>
             </DescriptionWrap>
           </ImgWrap2>
-          <Title>Cutesy Cards</Title>
+          <Title to="/projects">Cutesy Cards</Title>
           </ProjectsCard>
          
         </ProjectsWrapper>

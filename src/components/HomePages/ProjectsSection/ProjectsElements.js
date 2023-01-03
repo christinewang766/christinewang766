@@ -112,7 +112,7 @@ margin-top: -20px;
 }
 `
 
-export const Title = styled.h2`
+export const Title = styled(Link)`
 font-size: 1.5rem;
 font-family: "Lato";
 color: #44624a;

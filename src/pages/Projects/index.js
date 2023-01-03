@@ -27,7 +27,7 @@ const Projects = () => {
                                     <Title1>Christine's Portfolio</Title1>
                                     <GitWrap>
                                         <Topic>Github:</Topic>
-                                        <GitLink href="https://github.com/sobamilk/portfolio/" target="_blank">github.com/sobamilk/portfolio</GitLink>
+                                        <GitLink href="https://github.com/christinewang766/portfolio/" target="_blank">github.com/christinewang766/portfolio</GitLink>
                                     </GitWrap>
                                     <Topic>Language(s): JavaScript, CSS, HTML</Topic>
                                     <Topic>Status: Incomplete</Topic>
@@ -57,7 +57,7 @@ const Projects = () => {
                                     <Title2>Cutesy Cards</Title2>
                                     <GitWrap>
                                         <Topic>Github:</Topic>
-                                        <GitLink href="https://github.com/sobamilk/CuteFlashCards/" target="_blank">github.com/sobamilk/CuteFlashCards</GitLink>
+                                        <GitLink href="https://github.com/christinewang766/CuteFlashCards/" target="_blank">github.com/christinewang766/CuteFlashCards</GitLink>
                                     </GitWrap>
                                     <Topic>Language: Java</Topic>
                                     <Topic>Status: Incomplete</Topic>

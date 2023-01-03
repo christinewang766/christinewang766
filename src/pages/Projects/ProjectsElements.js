@@ -364,5 +364,18 @@ background: URL(${Home});
 background-size: auto 100%;
 background-position: center;
 background-repeat: no-repeat;
+
+@media screen and (max-width: 720px){
+  background-size: auto 240px;
+margin-top: -48px;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   @media screen and (max-width: 560px){
+    background-size: auto 145px;
+    margin-top: -95px;
+      background-position: center;
+      background-repeat: no-repeat;
+     }
 `
 

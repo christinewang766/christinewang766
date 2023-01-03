@@ -3,7 +3,7 @@ import Message from './pages/Message';
 import AboutMe from './pages/AboutMe';
 import Home from './pages';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Aos from 'aos'
 import ScrollUpButton from './components/ScrollUpButton';
 import Projects from './pages/Projects';

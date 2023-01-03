@@ -4,6 +4,7 @@ import TV from './media/tv.png'
 import clawCursor from './media/clawCursor.png'
 import HeartsDoodle from './media/hearts.png'
 import Back from './media/background.png'
+import Home from './media/home.png'
 
 export const BackButton = styled.button`
 outline: none;
@@ -355,5 +356,13 @@ width:100%;
 &:hover {
     cursor: URL(${clawCursor}),auto;
 }
+`
+export const HomeImg = styled.div`
+width:100%;
+height:100%;
+background: URL(${Home});
+background-size: auto 100%;
+background-position: center;
+background-repeat: no-repeat;
 `
 

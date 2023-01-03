@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap } from './ProjectsElements'
+import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap, HomeImg } from './ProjectsElements'
 import CuteVideo from './media/cuteDemo.MP4'
 import ScrollToTop from '../../components/ScrollToTop'
 import { useNavigate } from 'react-router-dom'
@@ -42,7 +42,7 @@ const Projects = () => {
                             </TextBoxWrap>
                             <DemoWrap>
                                 <VidWrap>
-                                    <DemoVid controls="controls" preload="metadata" src={CuteVideo} type='video/mp4'></DemoVid>
+                                    <HomeImg />
                                 </VidWrap>
                             </DemoWrap>
                         </GridWrap>

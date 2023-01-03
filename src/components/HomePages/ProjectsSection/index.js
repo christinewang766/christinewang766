@@ -3,6 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import { ProjectsContainer, ProjectsWrapper, Header, ProjectsCard, Title, Description, DescriptionWrap, ReadMore, ImgWrap1, ImgWrap2 } from './ProjectsElements'
+import ScrollToTop from '../../ScrollToTop'
 
 const Projects = () => {
 
@@ -13,6 +14,7 @@ const Projects = () => {
 
   return (
     <>
+    <ScrollToTop />
       <ProjectsContainer id="projects">
         <Header data-aos="fade-up">Projects</Header>
         <ProjectsWrapper>

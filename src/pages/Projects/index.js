@@ -30,7 +30,7 @@ const Projects = () => {
                                         <GitLink href="https://github.com/christinewang766/portfolio/" target="_blank">github.com/christinewang766/portfolio</GitLink>
                                     </GitWrap>
                                     <Topic>Language(s): JavaScript, CSS, HTML</Topic>
-                                    <Topic>Status: Incomplete</Topic>
+                                    <Topic>Status: Complete</Topic>
                                     <Description>
                                         <ListItem>Created responsive and fuctional user interfaces that is compatible for all devices and screens.</ListItem>
                                         <ListItem>Designed website with modern JavaScript frameworks like React, HTML5, and CSS3. </ListItem>

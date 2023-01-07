@@ -37,7 +37,7 @@ const Skills = () => {
                 <SkillsIcon data-aos="fade-up" src={DevTool} />
                 <SkillsH2>Developement Tools</SkillsH2>
                 <SkillsPWrap>
-                <SkillsP> Intellij Idea, DrRacket, Git, Photoshop, Microsoft Office, Google Workspace, Overleaf, Visual Studio Code</SkillsP>
+                <SkillsP> Intellij Idea, DrRacket, Git, Photoshop, Microsoft Office, Google Workspace, Overleaf, Visual Studio Code, Node.js</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
         </SkillsWrapper>

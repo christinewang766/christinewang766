@@ -163,12 +163,32 @@ background: ${({ isThreeSelected }) => (isThreeSelected ? '#44624a' : '	#f1ebe1'
 }
 `
 
+export const Button4 = styled.button`
+font-weight: bold;
+letter-spacing: 2px;
+text-align: center;
+font-family: "Lato";
+border: none;
+padding: 10px;
+color: ${({ isFourSelected }) => (isFourSelected ? '#fff' : '	#000')};
+box-shadow: ${({ isFourSelected }) => (isFourSelected ? '10px 10px 0 #f1ebe1' : '10px 10px 0 #aaaaaa')};
+background: ${({ isFourSelected }) => (isFourSelected ? '#44624a' : '	#f1ebe1')};
+
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
+`
+
 export const BlockTabs = styled.div`
 bottom:50px;
 right:50px;
 display: block;
 `
-
+export const Line = styled.div`
+border-top: 2px solid #000;
+margin-left: 5px;
+margin-right: 5px;
+`
 export const ContentTabs = styled.div`
 flex-grow : 1;
 `
@@ -189,4 +209,10 @@ padding: 20px;
 width: 100%;
 height: 100%;
 display: ${({ isThreeSelected }) => (isThreeSelected ? 'block' : 'none')};
+`
+export const Content4 = styled.div`
+padding: 20px;
+width: 100%;
+height: 100%;
+display: ${({ isFourSelected }) => (isFourSelected ? 'block' : 'none')};
 `

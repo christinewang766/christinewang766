@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Paperclip from './paperclip.png'
 import AOS from 'aos'
-import { BlockTabs, ContentTabs, Content1, Content2, Content3, TitleJob, WorkWrapper, WorkContainer, Heading, TextWrapper, Button1, Button2, Button3, Divider, Img, ImgWrap, Location, TitleWrap, DescriptionWrap, Description, ListItem, Date } from "./WorkElements";
+import { BlockTabs, ContentTabs, Line, Content1, Content2, Content3, Content4, TitleJob, WorkWrapper, WorkContainer, Heading, TextWrapper, Button1, Button2, Button3, Button4, Divider, Img, ImgWrap, Location, TitleWrap, DescriptionWrap, Description, ListItem, Date } from "./WorkElements";
 
 function Work() {
   const [toggleState, setToggleState] = useState(1);
@@ -11,7 +11,7 @@ function Work() {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1200, once:true });
+    AOS.init({ duration: 1200, once: true });
   }, [])
 
   return (
@@ -24,9 +24,11 @@ function Work() {
         <BlockTabs>
           <Button1 isOneSelected={(toggleState === 1)} onClick={() => toggleTab(1)}>Music Unbounded</Button1>
           <Divider />
-          <Button2 isTwoSelected={(toggleState === 2)} onClick={() => toggleTab(2)}>Amazon</Button2>
+          <Button2 isTwoSelected={(toggleState === 2)} onClick={() => toggleTab(2)}>Dollar Project</Button2>
           <Divider />
-          <Button3 isThreeSelected={(toggleState === 3)} onClick={() => toggleTab(3)}>Tutor</Button3>
+          <Button3 isThreeSelected={(toggleState === 3)} onClick={() => toggleTab(3)}>Amazon</Button3>
+          <Divider />
+          <Button4 isFourSelected={(toggleState === 4)} onClick={() => toggleTab(4)}>Tutor</Button4>
         </BlockTabs>
 
         <WorkWrapper>
@@ -39,7 +41,7 @@ function Work() {
                 <TitleJob>Web Developer / Designer</TitleJob>
                 <Location>@ Music Unbounded</Location>
               </TitleWrap>
-              <div style={{ borderTop: "2px solid #000", marginLeft: 5, marginRight: 5 }} />
+              <Line />
               <Date>2022-present</Date>
               <DescriptionWrap>
                 <Description>
@@ -52,10 +54,26 @@ function Work() {
 
             <Content2 isTwoSelected={(toggleState === 2)}>
               <TitleWrap>
+                <TitleJob>Marketing Director</TitleJob>
+                <Location>@ The UBC Dollar Project</Location>
+              </TitleWrap>
+              <Line />
+              <Date>August 2021 - present</Date>
+              <DescriptionWrap>
+                <Description>
+                  <ListItem>Executed marketing campaigns and advertised events through social media such as Instagram and Facebook, increasing public engagement and sales.</ListItem>
+                  <ListItem>Recruited and trained marketing associates for the organization and lead in team meetings.</ListItem>
+                  <ListItem>Grew the organization's web presence by engaging $190\%$ more Instagram accounts that weren't following the organization in the past 90 days.</ListItem>
+                </Description>
+              </DescriptionWrap>
+            </Content2>
+
+            <Content3 isThreeSelected={(toggleState === 3)}>
+              <TitleWrap>
                 <TitleJob>Warehouse Worker</TitleJob>
                 <Location>@ Amazon</Location>
               </TitleWrap>
-              <div style={{ borderTop: "2px solid #000", marginLeft: 5, marginRight: 5 }} />
+              <Line />
               <Date>August 2021 - September 2022</Date>
               <DescriptionWrap>
                 <Description>
@@ -64,13 +82,13 @@ function Work() {
                   <ListItem>Consistently had the highest rate of my department while prioritizing safety and teamwork.</ListItem>
                 </Description>
               </DescriptionWrap>
-            </Content2>
+            </Content3>
 
-            <Content3 isThreeSelected={(toggleState === 3)}>
+            <Content4 isFourSelected={(toggleState === 4)}>
               <TitleWrap>
                 <TitleJob>Private Math / Chemistry Tutor</TitleJob>
               </TitleWrap>
-              <div style={{ borderTop: "2px solid #000", marginLeft: 5, marginRight: 5 }} />
+              <Line />
               <Date>2022-current</Date>
               <DescriptionWrap>
                 <Description>
@@ -80,7 +98,7 @@ function Work() {
                   <ListItem>Improved students’ grades on tests up to 20%.</ListItem>
                 </Description>
               </DescriptionWrap>
-            </Content3>
+            </Content4>
           </ContentTabs>
         </WorkWrapper>
       </WorkContainer>

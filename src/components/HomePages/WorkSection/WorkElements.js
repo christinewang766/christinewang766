@@ -107,8 +107,7 @@ list-style: circle solid;
 list-style-position: inside;
 margin-bottom: 15px; 
 font-family: "Lato";
-// color: 	#44624a;
-color: black; //TODO
+color: 	#44624a;
 `
 
 export const Divider = styled.div`

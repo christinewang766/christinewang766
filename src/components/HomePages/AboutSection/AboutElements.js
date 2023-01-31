@@ -78,7 +78,7 @@ justify-content: center;
 `
 
 export const Img = styled.img`
-width: 100%;
+width: 90%;
 margin: 0 0 10px 0;
 padding-right: 0;
 `

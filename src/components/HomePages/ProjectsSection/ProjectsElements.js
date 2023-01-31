@@ -4,6 +4,8 @@ import WebsiteHex from './images/websiteHex.gif'
 import WebsiteHexHover from './images/websiteHexHover.gif'
 import CuteHex from './images/cuteHex.gif'
 import CuteHexHover from './images/cuteHexHover.gif'
+import PostThat from './images/post-that.gif'
+import PostThatHover from './images/post-that-hover.gif'
 
 export const ProjectsContainer = styled.div`
 display: flex;
@@ -12,7 +14,7 @@ align-items: center;
 justify-content: center;
 background: #f1ebe1;
 width: 100%;
-height: 750px;
+height: auto;
 
 @media screen and (max-width: 480px) {
     height: 1000px;
@@ -29,6 +31,8 @@ grid-template-columns: auto auto;
 align-items: center;
 justify-content: center;
 gap: 120px;
+height: 100%;
+padding-bottom: 50px;
 
 @media screen and (max-width: 1000px) {
     grid-template-columns: auto;
@@ -94,6 +98,34 @@ justify-content: center;
 }
 `
 
+export const ImgWrap3 = styled.div`
+background: URL(${PostThat});
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+transition: all 0.2s ease-in-out;
+width: 400px;
+height: 400px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+&:hover {
+    transform: scale(1.04);
+    transition: all 0.2s ease-in-out;
+    background: URL(${PostThatHover});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    width: 300px;
+    height: 300px;
+}
+`
+
 export const ProjectsCard = styled.div`
 display: flex;
 flex-direction: column;
@@ -105,7 +137,7 @@ export const Header = styled.h1`
 font-size: 8rem;
 color: #8ba888;
 font-family: "Playfair Display";
-padding-bottom: 30px;
+padding: 30px;
 margin-top: -20px;
 @media screen and (max-width: 500px) {
     font-size: 4.5rem;

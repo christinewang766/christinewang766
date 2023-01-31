@@ -4,7 +4,7 @@ import AOS from 'aos'
 import { BlockTabs, ContentTabs, Line, Content1, Content2, Content3, Content4, TitleJob, WorkWrapper, WorkContainer, Heading, TextWrapper, Button1, Button2, Button3, Button4, Divider, Img, ImgWrap, Location, TitleWrap, DescriptionWrap, Description, ListItem, Date } from "./WorkElements";
 
 function Work() {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(2);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -22,8 +22,8 @@ function Work() {
         </TextWrapper>
 
         <BlockTabs>
-          <Button1 isOneSelected={(toggleState === 1)} onClick={() => toggleTab(1)}>Music Unbounded</Button1>
-          <Divider />
+          {/* <Button1 isOneSelected={(toggleState === 1)} onClick={() => toggleTab(1)}>Music Unbounded</Button1>
+          <Divider /> */}
           <Button2 isTwoSelected={(toggleState === 2)} onClick={() => toggleTab(2)}>Dollar Project</Button2>
           <Divider />
           <Button3 isThreeSelected={(toggleState === 3)} onClick={() => toggleTab(3)}>Amazon</Button3>
@@ -36,7 +36,7 @@ function Work() {
             <Img src={Paperclip} />
           </ImgWrap>
           <ContentTabs>
-            <Content1 isOneSelected={(toggleState === 1)}>
+            {/* <Content1 isOneSelected={(toggleState === 1)}>
               <TitleWrap>
                 <TitleJob>Web Developer / Designer</TitleJob>
                 <Location>@ Music Unbounded</Location>
@@ -50,7 +50,7 @@ function Work() {
                   <ListItem>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</ListItem>
                 </Description>
               </DescriptionWrap>
-            </Content1>
+            </Content1> */}
 
             <Content2 isTwoSelected={(toggleState === 2)}>
               <TitleWrap>
@@ -63,7 +63,7 @@ function Work() {
                 <Description>
                   <ListItem>Executed marketing campaigns and advertised events through social media such as Instagram and Facebook, increasing public engagement and sales.</ListItem>
                   <ListItem>Recruited and trained marketing associates for the organization and lead in team meetings.</ListItem>
-                  <ListItem>Grew the organization's web presence by engaging $190\%$ more Instagram accounts that weren't following the organization in the past 90 days.</ListItem>
+                  <ListItem>Grew the organization's web presence by engaging 190% more Instagram accounts that weren't following the organization in the past 90 days.</ListItem>
                 </Description>
               </DescriptionWrap>
             </Content2>

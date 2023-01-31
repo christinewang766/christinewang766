@@ -5,6 +5,7 @@ import clawCursor from './media/clawCursor.png'
 import HeartsDoodle from './media/hearts.png'
 import Back from './media/background.png'
 import Home from './media/home.png'
+import Post from './media/postcard.png'
 
 export const BackButton = styled.button`
 outline: none;
@@ -286,6 +287,7 @@ export const Description = styled.ul`
 padding: 30px;
 padding-top: 20px;
 padding-bottom: 10px;
+
 @media screen and (max-width: 1000px){
   padding-top: 10px;
   padding-bottom: 0;
@@ -293,6 +295,7 @@ padding-bottom: 10px;
   @media screen and (max-width: 560px){
   padding: 0px;
   padding-top: 5px;
+  padding-right: 10px;
      }
 `
 export const ListItem = styled.li`
@@ -361,6 +364,28 @@ export const HomeImg = styled.div`
 width:100%;
 height:100%;
 background: URL(${Home});
+background-size: auto 100%;
+background-position: center;
+background-repeat: no-repeat;
+
+@media screen and (max-width: 720px){
+  background-size: auto 240px;
+margin-top: -48px;
+  background-position: center;
+  background-repeat: no-repeat;
+   }
+   @media screen and (max-width: 560px){
+    background-size: auto 145px;
+    margin-top: -95px;
+      background-position: center;
+      background-repeat: no-repeat;
+     }
+`
+
+export const PostImg = styled.div`
+width:100%;
+height:100%;
+background: URL(${Post});
 background-size: auto 100%;
 background-position: center;
 background-repeat: no-repeat;

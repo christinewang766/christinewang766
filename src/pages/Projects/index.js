@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap, HomeImg } from './ProjectsElements'
+import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap, HomeImg, PostImg } from './ProjectsElements'
 import CuteVideo from './media/cuteDemo.MP4'
 import ScrollToTop from '../../components/ScrollToTop'
 import { useNavigate } from 'react-router-dom'
@@ -19,6 +19,39 @@ const Projects = () => {
                         </ButtonWrap>
                         <Header>Projects</Header>
                     </HeaderWrap>
+
+                    <Project1Wrap>
+                        <GridWrap>
+                            <TextBoxWrap>
+                                <Hearts />
+                                <TextWrap>
+                                    <Title1>Post-That</Title1>
+                                    <GitWrap>
+                                        <Topic>Github:</Topic>
+                                        <GitLink href="https://github.com/stevenning203/nw-postcard" target="_blank">repository</GitLink>
+                                    </GitWrap>
+                                    <Topic>Language(s): Typescript, CSS, HTML</Topic>
+                                    <Topic>Status: Complete</Topic>
+                                    <Description>
+                                        <ListItem>Developed as a team of 4 in a 24 hour hackathon, Nwhacks 2023, to plan, code, and create a web app.</ListItem>
+                                        <ListItem>Utilized Figma to design the initial specifications, composition, and logistics for Post-That for a secure and attractive ui using.</ListItem>
+                                        <ListItem>Implemented nextJS as a front-end framework, Auth0 SSO to enable secure authentication, and the Google cloud suite to store and retrieve data.
+                                        </ListItem>
+                                        <ListItem>Employed Tailwind and Style components for a simple and modern UI.
+                                        </ListItem>
+                                        
+                                    </Description>
+                                </TextWrap>
+                            </TextBoxWrap>
+                            <DemoWrap>
+                                <VidWrap>
+                                    <PostImg />
+                                </VidWrap>
+                            </DemoWrap>
+                        </GridWrap>
+                    </Project1Wrap>
+                    <Hearts2 />
+
                     <Project1Wrap>
                         <GridWrap>
                             <TextBoxWrap>
@@ -27,7 +60,7 @@ const Projects = () => {
                                     <Title1>Christine's Portfolio</Title1>
                                     <GitWrap>
                                         <Topic>Github:</Topic>
-                                        <GitLink href="https://github.com/christinewang766/portfolio/" target="_blank">github.com/christinewang766/portfolio</GitLink>
+                                        <GitLink href="https://github.com/christinewang766/portfolio/" target="_blank">repository</GitLink>
                                     </GitWrap>
                                     <Topic>Language(s): JavaScript, CSS, HTML</Topic>
                                     <Topic>Status: Complete</Topic>
@@ -57,7 +90,7 @@ const Projects = () => {
                                     <Title2>Cutesy Cards</Title2>
                                     <GitWrap>
                                         <Topic>Github:</Topic>
-                                        <GitLink href="https://github.com/christinewang766/CuteFlashCards/" target="_blank">github.com/christinewang766/CuteFlashCards</GitLink>
+                                        <GitLink href="https://github.com/christinewang766/CuteFlashCards/" target="_blank">repository</GitLink>
                                     </GitWrap>
                                     <Topic>Language: Java</Topic>
                                     <Topic>Status: Incomplete</Topic>

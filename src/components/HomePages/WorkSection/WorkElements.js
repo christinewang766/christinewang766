@@ -108,7 +108,7 @@ list-style-position: inside;
 margin-bottom: 15px; 
 font-family: "Lato";
 // color: 	#44624a;
-color: red; //TODO
+color: black; //TODO
 `
 
 export const Divider = styled.div`

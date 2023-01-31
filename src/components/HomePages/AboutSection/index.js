@@ -7,7 +7,7 @@ import { AboutContainer, AboutWrapper, TextWrapper, Heading, Description, ImgWra
 import { Button } from './ButtonElements'
 
 
-import Placeholder from "../images/placeholderProfile.jpg"
+import Profile from "../images/profile.jpg"
 
 const AboutSection = () => {
 
@@ -25,7 +25,7 @@ const AboutSection = () => {
                     <Button lightText={true} to="/about-me">Want to<br></br>know more?</Button>
                 </TextWrapper>
                 <ImgWrap>
-                <Img data-aos="fade-up" src={Placeholder} />
+                <Img data-aos="fade-up" src={Profile} />
                 </ImgWrap>
             </AboutWrapper>
     </AboutContainer>

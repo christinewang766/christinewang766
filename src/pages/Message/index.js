@@ -1,7 +1,6 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Container, BackButton, FormWrap, BottomWrap, FormContent, Form, FormH1, BothNameWrap, NameWrap, LabelWrap, FormLabel, RequiredAster, NameInput, Input, MessageInput, FormButton, Warning, ButtonWrap, CaptchaWrap } from './MessageElements'
-import ReCAPTCHA from "react-google-recaptcha";
+import { Container, BackButton, FormWrap, BottomWrap, FormContent, Form, FormH1, BothNameWrap, NameWrap, LabelWrap, FormLabel, RequiredAster, NameInput, Input, MessageInput, FormButton, ButtonWrap } from './MessageElements'
 import axios from "axios";
 import ScrollToTop from '../../components/ScrollToTop';
 import Swal from 'sweetalert2'
@@ -20,7 +19,6 @@ const Message = () => {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [note, setNote] = useState("");
-  const [disableSubmit, setDisableSubmit] = useState(true);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -31,8 +29,6 @@ const Message = () => {
     setEmail('');
     setNote('');
     setMessage('');
-    window.grecaptcha.reset();
-    setDisableSubmit(true);
     Swal.fire({
       icon: 'success',
       title: 'Success!',
@@ -141,15 +137,7 @@ const Message = () => {
                   setFormData({ ...formData, message: value });
                   setNote(value);
                 }}></MessageInput>
-                <CaptchaWrap>
-                  <ReCAPTCHA
-                    // sitekey="6LdWc8AjAAAAAJbo1iD4uYQuE6RqKXm4zrUla7ck"s used with localhost
-                    sitekey="6Lfc3csjAAAAAAI6G1ZDbtK62iCqLTT0ZTH_d4xX"
-                    onChange={useCallback(() => setDisableSubmit(false))}
-                  />
-                </CaptchaWrap>
-                <Warning isVisible={disableSubmit}> Hey! You're not done the form yet, don't think about submitting! </Warning>
-                <FormButton isVisible={disableSubmit} type="submit" disabled={disableSubmit}>Submit</FormButton>
+                <FormButton type="submit">Submit</FormButton>
               </BottomWrap>
             </Form>
           </FormContent>

@@ -192,15 +192,3 @@ font-family: "Lato";
 }
 }
 `
-export const Warning = styled.p`
-font-size: 12px;
-padding-bottom: 10px;
-padding-top: 10px;
-color:  ${({isVisible}) => (isVisible ? 'darkred' : '#f1ebe1')};
-`
-export const CaptchaWrap = styled.div`
-@media screen and (max-width: 400px) {
-    transform:scale(0.65);
-transform-origin: 0 0;
-}
-`

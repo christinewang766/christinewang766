@@ -268,6 +268,11 @@ padding: 30px 20px;
 &:hover{
   cursor: URL(${clawCursor}), auto;
 }
+
+@media screen and (max-width: 400px) {
+    background-size: 50px 50px;
+    margin-left: -5%;
+    } 
 `
 export const ButtonMedium = styled.button`
 outline: none;
@@ -289,6 +294,11 @@ padding: 30px 20px;
 &:hover{
   cursor: URL(${clawCursor}), auto;
 }
+
+@media screen and (max-width: 400px) {
+  background-size: 50px 50px;
+  margin-left: -5%;
+  } 
 `
 export const ButtonShort = styled.button`
 outline: none;
@@ -310,6 +320,10 @@ padding: 30px 20px;
 &:hover{
   cursor: URL(${clawCursor}), auto;
 }
+
+@media screen and (max-width: 400px) {
+  background-size: 50px 50px;
+  } 
 `
 export const EducationWrap = styled.div`
 height: auto;

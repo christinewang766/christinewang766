@@ -8,6 +8,7 @@ import { BackButton, ButtonWrap, TitleWrap, Title, ImgWrap, AboutContainer, Abou
 
 import Placeholder from "./images/mePic.jpg"
 import UBC from "./images/ubc.png"
+// import Resume from "./images/resume.pdf"
 import ScrollToTop from '../../components/ScrollToTop'
 
 const AboutMe = () => {
@@ -32,7 +33,7 @@ const AboutMe = () => {
             <SubHead><i>she/her or any pronouns</i></SubHead>
 
             <ButtonNativeWrap>
-              <Button color="none" title="Resume" onPress={() => OpenAnything.Pdf("https://www.africau.edu/images/default/sample.pdf")}>Resume</Button>
+              <Button color="none" title="Resume" onPress={() => OpenAnything.Pdf("https://drive.google.com/file/d/1iyiaCxbLTyjUQYJrZB54iABnK0zJqxJc/view?usp=share_link")}>Resume</Button>
             </ButtonNativeWrap>
             <AdjustBioContainer>
               <AdjustBioWrap>
@@ -44,7 +45,7 @@ const AboutMe = () => {
                   <div>Inquisitive, creative, and analytical computer science undergraduate at the University of British Columbia, with a strong foundation in math, logic, and object-oriented programming. Seeking a challenge to stack on new skills and push my limits.</div>
                 </StyledPopup>
                 <StyledPopup trigger={<ButtonLong>long</ButtonLong>}>
-                  Born in New Zealand and raised in British Columbia, Canada, Christine Wang is a computer science undergraduate at the University of British Columbia with a strong foundation in math, logic, and object-oriented programming. They have a keen eye for design and a passion for bringing life to a program using languages such as JavaScript, Java, C++, and Racket. Currently, they are looking for challenges to stack on new skills and push their limits. <br></br>Also, they have a <b>STRONG</b> interest in animal-shaped pots! They are not a good gardener, but they can bake some mad cookies.
+                  Born in New Zealand and raised in British Columbia, Canada, Christine Wang is a computer science undergraduate at the University of British Columbia with a strong foundation in math, logic, and object-oriented programming. They have a keen eye for design and a passion for bringing life to a program using languages such as JavaScript, Java, C++, C, and Racket. Currently, they are looking for challenges to stack on new skills and push their limits. <br></br>Also, they have a <b>STRONG</b> interest in animal-shaped pots! They are not a good gardener, but they can bake some mad cookies.
                 </StyledPopup>
               </AdjustBioWrap>
             </AdjustBioContainer>

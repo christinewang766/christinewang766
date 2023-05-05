@@ -23,7 +23,7 @@ const Skills = () => {
                 <SkillsIcon data-aos="fade-up" src={Languages} />
                 <SkillsH2>Languages</SkillsH2>
                 <SkillsPWrap>
-                <SkillsP>Java, Racket, C++, CSS3, HTML5, JavaScript</SkillsP>
+                <SkillsP>Java, Racket, C++, C, CSS3, HTML5, JavaScript</SkillsP>
                 </SkillsPWrap>
             </SkillsCard>
             <SkillsCard>

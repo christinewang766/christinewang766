@@ -22,8 +22,8 @@ function Work() {
         </TextWrapper>
 
         <BlockTabs>
-          {/* <Button1 isOneSelected={(toggleState === 1)} onClick={() => toggleTab(1)}>Music Unbounded</Button1>
-          <Divider /> */}
+          <Button1 isOneSelected={(toggleState === 1)} onClick={() => toggleTab(1)}>Music Unbounded</Button1>
+          <Divider />
           <Button2 isTwoSelected={(toggleState === 2)} onClick={() => toggleTab(2)}>Dollar Project</Button2>
           <Divider />
           <Button3 isThreeSelected={(toggleState === 3)} onClick={() => toggleTab(3)}>Amazon</Button3>
@@ -36,21 +36,21 @@ function Work() {
             <Img src={Paperclip} />
           </ImgWrap>
           <ContentTabs>
-            {/* <Content1 isOneSelected={(toggleState === 1)}>
+            <Content1 isOneSelected={(toggleState === 1)}>
               <TitleWrap>
                 <TitleJob>Web Developer / Designer</TitleJob>
                 <Location>@ Music Unbounded</Location>
               </TitleWrap>
               <Line />
-              <Date>2022-present</Date>
+              <Date>November 2022 - present</Date>
               <DescriptionWrap>
                 <Description>
-                  <ListItem>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</ListItem>
-                  <ListItem>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</ListItem>
-                  <ListItem>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</ListItem>
+                  <ListItem>Implemented a React application to create a visually appealing and modern home page that improved the user experience for clients interacting with the organization.</ListItem>
+                  <ListItem>Collaborated with a team of developers and designers to build a website that was accessible and responsive across various devices and user groups, using TypeScript and CSS.</ListItem>
+                  <ListItem>Designed high-fidelity prototypes for the website using a variety of tools, including Wix, Figma, Canva, and Photoshop, to ensure that the final product meets user needs.</ListItem>
                 </Description>
               </DescriptionWrap>
-            </Content1> */}
+            </Content1>
 
             <Content2 isTwoSelected={(toggleState === 2)}>
               <TitleWrap>
@@ -61,9 +61,9 @@ function Work() {
               <Date>August 2021 - present</Date>
               <DescriptionWrap>
                 <Description>
-                  <ListItem>Executed marketing campaigns and advertised events through social media such as Instagram and Facebook, increasing public engagement and sales.</ListItem>
-                  <ListItem>Recruited and trained marketing associates for the organization and lead in team meetings.</ListItem>
-                  <ListItem>Grew the organization's web presence by engaging 190% more Instagram accounts that weren't following the organization in the past 90 days.</ListItem>
+                  <ListItem>Developed and executed successful marketing campaigns on social media platforms including Instagram, resulting in increased public engagement and boosted sales.</ListItem>
+                  <ListItem>Oversaw recruitment and training of marketing associates, providing guidance and leading team meetings to ensure successful execution of marketing strategies.</ListItem>
+                  <ListItem>Amplified organization's web presence by driving engagement with 190% more Instagram accounts that were not previously following the organization within a 90-day period.</ListItem>
                 </Description>
               </DescriptionWrap>
             </Content2>
@@ -77,25 +77,24 @@ function Work() {
               <Date>August 2021 - September 2022</Date>
               <DescriptionWrap>
                 <Description>
-                  <ListItem>Occasionally responsible for ”Problem Solving” and ”Gatekeeping” roles that place astrong emphasis on computer literacy and analytical decision-making.</ListItem>
-                  <ListItem>Safely and efficiently operate warehouse material handling equipment in a fast-paced environment to meet company production goals.</ListItem>
-                  <ListItem>Consistently had the highest rate of my department while prioritizing safety and teamwork.</ListItem>
+                  <ListItem>Demonstrated strong problem-solving and analytical decision-making skills in roles such as "Problem Solving" and "Gatekeeping," which required proficiency in computer literacy.</ListItem>
+                  <ListItem>Operated warehouse material handling equipment safely and efficiently in a fast-paced environment to meet company production goals.</ListItem>
+                  <ListItem>Achieved the highest rate in my department consistently while prioritizing safety and fostering a spirit of teamwork.</ListItem>
                 </Description>
               </DescriptionWrap>
             </Content3>
 
             <Content4 isFourSelected={(toggleState === 4)}>
               <TitleWrap>
-                <TitleJob>Private Math / Chemistry Tutor</TitleJob>
+                <TitleJob>Private / Peer Tutor</TitleJob>
               </TitleWrap>
               <Line />
               <Date>2022-current</Date>
               <DescriptionWrap>
                 <Description>
-                  <ListItem>Taught high school level Chemistry and Mathematics in a flexible and approachable manner.</ListItem>
-                  <ListItem>Monitored students’ educational progress through regular face-to-face and email check-ups, ensuring that all work is completed and corrected.</ListItem>
-                  <ListItem>Displayed critical thinking and time-management skills by creating successful studying strategies and individualized practice questions. This motivated and provided further insight to students.</ListItem>
-                  <ListItem>Improved students’ grades on tests up to 20%.</ListItem>
+                  <ListItem>Taught high school level Chemistry and Mathematics in a flexible and approachable manner, fostering a positive learning environment.</ListItem>
+                  <ListItem>Monitored students' educational progress through regular face-to-face and email check-ups, ensuring that all work was completed and corrected in a timely manner.</ListItem>
+                  <ListItem>Developed and implemented individualized study plans that resulted in an average grade improvement of 15% on tests, contributing to the overall academic success of students.</ListItem>
                 </Description>
               </DescriptionWrap>
             </Content4>

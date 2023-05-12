@@ -21,7 +21,8 @@ height: auto;
 }
 
 @media screen and (max-width: 1000px) {
-    height: 1400px; 
+    height: auto; 
+    padding-bottom: 10%;
 }
 `
 export const ProjectsWrapper = styled.div`

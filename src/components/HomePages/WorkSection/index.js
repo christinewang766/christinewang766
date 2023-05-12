@@ -89,7 +89,7 @@ function Work() {
                 <TitleJob>Private / Peer Tutor</TitleJob>
               </TitleWrap>
               <Line />
-              <Date>2022-current</Date>
+              <Date>April 2019 − April 2020</Date>
               <DescriptionWrap>
                 <Description>
                   <ListItem>Taught high school level Chemistry and Mathematics in a flexible and approachable manner, fostering a positive learning environment.</ListItem>

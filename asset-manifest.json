@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.311c3478.css",
-    "main.js": "/static/js/main.3d75a5eb.js",
+    "main.js": "/static/js/main.0ab767bd.js",
     "static/media/video.mp4": "/static/media/video.bed87221978ded0bbef1.mp4",
     "static/media/cuteDemo.MP4": "/static/media/cuteDemo.1bc56f82ac7f3827714b.MP4",
     "static/media/websiteHex.gif": "/static/media/websiteHex.b862b2fc12eeca6b4340.gif",
@@ -54,7 +54,7 @@
     "static/media/fly.jpg": "/static/media/fly.6b79ad1ff94542315fb5.jpg",
     "static/media/china2.jpg": "/static/media/china2.96397ee41b28fbad25d9.jpg",
     "static/media/sleep.JPG": "/static/media/sleep.d5ef72b1fef996ce149b.JPG",
-    "static/media/noNose.jpg": "/static/media/noNose.e26ac1c33ae2ecacdcbc.jpg",
+    "static/media/noNose.JPG": "/static/media/noNose.e26ac1c33ae2ecacdcbc.JPG",
     "static/media/mask.JPG": "/static/media/mask.3b0ea7edd97b863e12ae.JPG",
     "static/media/openLetter.png": "/static/media/openLetter.0491cb744afacdcc8fac.png",
     "static/media/paperclip.png": "/static/media/paperclip.2f210eaf3d2f12ac523a.png",
@@ -68,10 +68,10 @@
     "static/media/init.png": "/static/media/init.e0cd619a9362d9b53fdd.png",
     "index.html": "/index.html",
     "main.311c3478.css.map": "/static/css/main.311c3478.css.map",
-    "main.3d75a5eb.js.map": "/static/js/main.3d75a5eb.js.map"
+    "main.0ab767bd.js.map": "/static/js/main.0ab767bd.js.map"
   },
   "entrypoints": [
     "static/css/main.311c3478.css",
-    "static/js/main.3d75a5eb.js"
+    "static/js/main.0ab767bd.js"
   ]
 }

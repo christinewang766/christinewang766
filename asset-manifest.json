@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.311c3478.css",
-    "main.js": "/static/js/main.0ab767bd.js",
-    "static/media/video.mp4": "/static/media/video.bed87221978ded0bbef1.mp4",
+    "main.js": "/static/js/main.3104dcf3.js",
     "static/media/cuteDemo.MP4": "/static/media/cuteDemo.1bc56f82ac7f3827714b.MP4",
+    "static/media/video.mp4": "/static/media/video.ef3fc063ceeb8317eda6.mp4",
+    "static/media/colourLove.mp4": "/static/media/colourLove.22f06acb38f04d6dbf85.mp4",
     "static/media/websiteHex.gif": "/static/media/websiteHex.b862b2fc12eeca6b4340.gif",
     "static/media/websiteHexHover.gif": "/static/media/websiteHexHover.477e62e8c9aa57be9985.gif",
     "static/media/vaccum.PNG": "/static/media/vaccum.c60d18e277ee17f6ae71.PNG",
@@ -12,10 +13,12 @@
     "static/media/tv.png": "/static/media/tv.f1d95c70615323e1869d.png",
     "static/media/pochita.png": "/static/media/pochita.98c2bf09d9fb0f8ca77d.png",
     "static/media/mePic.jpg": "/static/media/mePic.3a237053c90dd997db0e.jpg",
+    "static/media/colourLoveHex.gif": "/static/media/colourLoveHex.420718fb5d8796b21715.gif",
     "static/media/profile.jpg": "/static/media/profile.411098095bb898f4361d.jpg",
     "static/media/snailPot.png": "/static/media/snailPot.f60e04d2f8a02bdc6dfb.png",
     "static/media/post-that.gif": "/static/media/post-that.01dcccd9aa5bd8b932fa.gif",
     "static/media/frogPot.png": "/static/media/frogPot.3dcedc97b0e151987470.png",
+    "static/media/colourLoveHexHover.gif": "/static/media/colourLoveHexHover.eb6f32d3fbceb2385bdc.gif",
     "static/media/pokeReveal2.PNG": "/static/media/pokeReveal2.05baf66f76b6712ab52a.PNG",
     "static/media/post-that-hover.gif": "/static/media/post-that-hover.0d9aa29f63a26992e54b.gif",
     "static/media/home.png": "/static/media/home.c029a3ef8c447ce07b22.png",
@@ -68,10 +71,10 @@
     "static/media/init.png": "/static/media/init.e0cd619a9362d9b53fdd.png",
     "index.html": "/index.html",
     "main.311c3478.css.map": "/static/css/main.311c3478.css.map",
-    "main.0ab767bd.js.map": "/static/js/main.0ab767bd.js.map"
+    "main.3104dcf3.js.map": "/static/js/main.3104dcf3.js.map"
   },
   "entrypoints": [
     "static/css/main.311c3478.css",
-    "static/js/main.0ab767bd.js"
+    "static/js/main.3104dcf3.js"
   ]
 }

@@ -6,6 +6,8 @@ import CuteHex from './images/cuteHex.gif'
 import CuteHexHover from './images/cuteHexHover.gif'
 import PostThat from './images/post-that.gif'
 import PostThatHover from './images/post-that-hover.gif'
+import ColourLove from './images/colourLoveHex.gif'
+import ColourLoveHover from './images/colourLoveHexHover.gif'
 
 export const ProjectsContainer = styled.div`
 display: flex;
@@ -116,6 +118,34 @@ justify-content: center;
     transform: scale(1.04);
     transition: all 0.2s ease-in-out;
     background: URL(${PostThatHover});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+    width: 300px;
+    height: 300px;
+}
+`
+
+export const ImgWrap4 = styled.div`
+background: URL(${ColourLove});
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
+transition: all 0.2s ease-in-out;
+width: 400px;
+height: 400px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+&:hover {
+    transform: scale(1.04);
+    transition: all 0.2s ease-in-out;
+    background: URL(${ColourLoveHover});
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

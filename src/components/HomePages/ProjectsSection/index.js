@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import { ProjectsContainer, ProjectsWrapper, Header, ProjectsCard, Title, Description, DescriptionWrap, ReadMore, ImgWrap1, ImgWrap2, ImgWrap3 } from './ProjectsElements'
+import { ProjectsContainer, ProjectsWrapper, Header, ProjectsCard, Title, Description, DescriptionWrap, ReadMore, ImgWrap1, ImgWrap2, ImgWrap3, ImgWrap4 } from './ProjectsElements'
 import ScrollToTop from '../../ScrollToTop'
 
 const Projects = () => {
@@ -18,6 +18,16 @@ const Projects = () => {
       <ProjectsContainer id="projects">
         <Header data-aos="fade-up">Projects</Header>
         <ProjectsWrapper>
+          
+        <ProjectsCard data-aos="fade-up">
+          <ImgWrap4>
+            <DescriptionWrap>
+              <Description>A modern palette generator for every artist's needs. Login and register, run from dogs and be creative. Your palettes will always be there when you come back.</Description>
+            <ReadMore to="/projects">Read More</ReadMore>
+            </DescriptionWrap>
+          </ImgWrap4>
+          <Title to="/projects">Colour Love</Title>
+          </ProjectsCard>
 
         <ProjectsCard data-aos="fade-up">
           <ImgWrap3>

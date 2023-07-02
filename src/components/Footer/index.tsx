@@ -13,14 +13,13 @@ import {
   SocialIcons,
   SocialMediaWrap,
   WebsiteRights,
-  SpeechBubble,
-  Speech,
   PhotoAlbum,
   SpeechWrap,
   Grid,
 } from "./FooterElements";
 
 const Footer = () => {
+  let turnipsString:string[] = ["You found me!", "I like going on...", "...adventures!"];
 
   function SingleSocialIcon(props: {
     ariaLabel: string;
@@ -39,7 +38,16 @@ const Footer = () => {
     );
   }
 
+  function SpeechBubble(props:{speech: string}) {
+    return (
+      <div style={{background: '#c0cfb2', borderRadius: '100px', display: 'flex', padding: '7px', alignItems: 'center', justifyContent: 'center'}}>
+        <p style={{fontSize: '14px', color: 'white', fontWeight: '600', fontFamily: 'Lato', textAlign: 'center'}}>{props.speech}</p>
+      </div>
+    )
+  };
+
   return (
+    <>
     <FooterContainer id="contact">
       <Grid>
         {/** WRAP: you found me */}
@@ -51,17 +59,10 @@ const Footer = () => {
             alt="turnips"
           />
           <SpeechWrap>
-            <SpeechBubble>
-              <Speech>You found me!</Speech>
-            </SpeechBubble>
-            <SpeechBubble>
-              <Speech>
-                I like going on<p></p>adventures...
-              </Speech>
-            </SpeechBubble>
-            <SpeechBubble>
+            <SpeechBubble speech={turnipsString[0]} />
+            <SpeechBubble speech={turnipsString[1]} />
+            <SpeechBubble speech={turnipsString[2]} />
               <PhotoAlbum to="/turnips">♡ Album ♡</PhotoAlbum>
-            </SpeechBubble>
           </SpeechWrap>
         </div>
         <FooterWrap>
@@ -101,6 +102,7 @@ const Footer = () => {
         </FooterWrap>
       </Grid>
     </FooterContainer>
+    </>
   );
 };
 

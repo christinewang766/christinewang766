@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+// @ts-ignore
 import navbarBackground from "./images/navbarBackground.png";
 
 export const Nav = styled.nav`
-// background: ${({scrollNav}) => (scrollNav ? 'url(${navbarBackground})' : 'transparent')};
 background: url(${navbarBackground});
 height: 80px;
 margin-top: -80px;
@@ -67,9 +67,6 @@ margin-right: -22px;
 @media screen and (max-width: 900px) {
     display: none;
 }
-`
-export const NavItem = styled.li`
-height: 80px;
 `
 
 export const NavLinks = styled(LinkS)`

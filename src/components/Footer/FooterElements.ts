@@ -53,22 +53,6 @@ justify-content: space-between;
 align-items: center;
 width: 240px;
 `
-
-export const SpeechBubble = styled.div`
-background:#c0cfb2;
-border-radius: 100px;
-display: flex;
-padding: 7px;
-align-items: center;
-justify-content: center;
-`
-export const Speech = styled.p`
-font-size: 14px;
-color: 	white;
-font-weight: 600;
-font-family: "Lato";
-text-align: center;
-`
 export const SpeechWrap = styled.div`
 display: flex;
 flex-direction: column;

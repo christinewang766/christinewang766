@@ -1,3 +1,4 @@
+/* general styling and ensures cat cursor throughout App */
 * {
   box-sizing: border-box;
   margin:0;
@@ -5,6 +6,7 @@
   cursor: url(catCursor.png), auto;
 }
 
+/* ensures claw cursor on hover throughout App */
 a {
   cursor: url(clawCursor.png), auto;
 }

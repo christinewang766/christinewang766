@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap, HomeImg, PostImg } from './ProjectsElements'
 import CuteVideo from './media/cuteDemo.MP4'
-import ColourLoveVideo from './media/colourLove.mp4'
+import ColourLoveVideo from './media/colourLove.MP4'
 import ScrollToTop from '../../components/ScrollToTop'
 import { useNavigate } from 'react-router-dom'
 

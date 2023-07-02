@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, ButtonWrap, BackButton, ProjectWrap, HeaderWrap, Hearts, Hearts2, Project1Wrap, Header, Title1, Title2, GridWrap, TextBoxWrap, TextWrap, GitWrap, GitLink, Topic, Description, ListItem, DemoVid, DemoWrap, VidWrap, HomeImg, PostImg } from './ProjectsElements'
 import CuteVideo from './media/cuteDemo.MP4'
+import ColourLoveVideo from './media/colourLove.mp4'
 import ScrollToTop from '../../components/ScrollToTop'
 import { useNavigate } from 'react-router-dom'
 
@@ -19,6 +20,39 @@ const Projects = () => {
                         </ButtonWrap>
                         <Header>Projects</Header>
                     </HeaderWrap>
+
+                    <Project1Wrap>
+                        <GridWrap>
+                            <TextBoxWrap>
+                                <Hearts />
+                                <TextWrap>
+                                    <Title1>Colour Love</Title1>
+                                    <GitWrap>
+                                        <Topic>Github:</Topic>
+                                        <GitLink href="https://github.com/christinewang766/colour-love" target="_blank">repository</GitLink>
+                                    </GitWrap>
+                                    <Topic>Language(s): Typescript, CSS, HTML</Topic>
+                                    <Topic>Status: Incomplete</Topic>
+                                    <Description>
+                                    <ListItem>Designed a visually appealing CRUD application using Vite and React, with a strong focus on enhancing the overall user experience.</ListItem>
+                                    <ListItem>Developed user-friendly and responsive web apps.&nbsp;
+                                        <a target="_blank" href="https://screenrec.com/share/RfziQm5lkC">(Video)</a>
+                                    </ListItem>
+                                        <ListItem>Implemented Redux to efficiently manage and centralize the application state, including user login state for enhanced authentication and personalization.</ListItem>
+                                        <ListItem>Successfully configured and administered MySQL database servers to facilitate a seamless login/registration system and to store palettes for future use, ensuring efficient data management and retrieval.
+                                        </ListItem>
+                                    </Description>
+                                </TextWrap>
+                            </TextBoxWrap>
+                            <DemoWrap>
+                                <VidWrap>
+                                    <DemoVid controls="controls" preload="metadata" src={ColourLoveVideo} type='video/mp4'></DemoVid>
+                                    <div style={{padding:'10px', background:'white', fontFamily:'lato', fontWeight:'600'}}>Please expand the video!</div>
+                                </VidWrap>
+                            </DemoWrap>
+                        </GridWrap>
+                    </Project1Wrap>
+                    <Hearts2 />
 
                     <Project1Wrap>
                         <GridWrap>

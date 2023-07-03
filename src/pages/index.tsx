@@ -11,7 +11,7 @@ import AboutSection from "../components/HomePages/AboutSection";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  let toggle: () => void = function () {
+  const toggle: () => void = function () {
     setIsOpen(!isOpen);
   };
 

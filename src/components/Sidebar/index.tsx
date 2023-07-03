@@ -6,6 +6,7 @@ import { FaTimes } from 'react-icons/fa'
 const Sidebar = (props: { isOpen: boolean, toggle: () => void }) => {
   
   return (
+    <div style={{pointerEvents: props.isOpen ? 'auto' : 'none'}}>
     <SidebarContainer style={{opacity: props.isOpen ? '100%' : '0'}}>
       <Icon onClick={props.toggle}>
         <FaTimes style={{color: '#44624a'}} />
@@ -18,11 +19,11 @@ const Sidebar = (props: { isOpen: boolean, toggle: () => void }) => {
         <SidebarLink to="contact" onClick={props.toggle}>Contact</SidebarLink>
         </ul>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-            <SidebarRoute to="/message" />
+            <SidebarRoute to="/message" onClick={props.toggle} />
         </div>
       </div>
     </SidebarContainer>
-    
+    </div>
   )
 }
 

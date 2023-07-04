@@ -26,7 +26,7 @@ const AboutSection = () => {
 
   return (
     <>
-      <AboutContainer >
+      <AboutContainer id="about">
         <AboutWrapper>
           <TextWrapper>
             <Heading data-aos="fade-left" data-aos-easing="linear">

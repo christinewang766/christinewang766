@@ -36,7 +36,6 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 padding: 30px;
-// box-shadow: 0 1px 3px #fff;
 transition: all 0.2s ease-in-out;
 
 &:hover {
@@ -44,13 +43,8 @@ transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 `
-export const SkillsIcon = styled.img`
-height: 160px;
-width: auto;
-max-width:100%;
-margin-bottom: 10px;
-`
-export const SkillsH1 = styled.h1`
+
+export const Title = styled.h1`
 font-size: 8rem;
 color: #fff;
 font-family: "Playfair Display";
@@ -60,7 +54,7 @@ margin-top: 20px;
     font-size: 2.5rem;
 }
 `
-export const SkillsH2 = styled.h2`
+export const Category = styled.h2`
 font-size: 1rem;
 margin-top: 15px;
 margin-bottom: 15px;  
@@ -69,14 +63,8 @@ color: #fff;
 letter-spacing: 2px;
 font-weight: 1000;
 `
-export const SkillsPWrap = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 160px;
-`
-export const SkillsP = styled.p`
+
+export const Details = styled.p`
 font-size: 1rem;
 text-align: center;
 font-family: "Lato";

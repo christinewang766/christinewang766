@@ -344,7 +344,7 @@ z-value: 5;
 export const Education = styled.h2`
 font-family: "Lato";  
 font-weight: bold;
-letter-spacing: 5px;
+letter-spacing: 3px;
 color: 	#44624a;
 padding-bottom: 10px;
 z-value: 8;
@@ -352,7 +352,7 @@ z-value: 8;
 export const EducationDate = styled.p`
 font-family: "Florentia"; 
 font-size: 15px;
-letter-spacing: 5px;
+letter-spacing: 3px;
 font-style: italic;
 color: 	#8ba888;
 padding-bottom: 10px;
@@ -361,7 +361,7 @@ z-value: 7;
 export const EducationDetails = styled.h4`
 font-family: "Lato";  
 font-weight: bold;
-letter-spacing: 3px;
+letter-spacing: 2px;
 text-align: center;
 color: #44624a;
 z-value: 6;

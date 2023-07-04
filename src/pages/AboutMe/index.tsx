@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as OpenAnything from "react-native-openanything"
 import 'aos/dist/aos.css'
 import { useNavigate } from 'react-router-dom'
 import { Button } from "react-native"
+import {Helmet} from "react-helmet"
 
 import { BackButton, ButtonWrap, TitleWrap, Title, ImgWrap, AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong, Education, EducationDate, EducationDetails, EducationWrap, ButtonNativeWrap, UBCImg, UBCImgWrap } from './AboutMeElements'
 
-import Placeholder from "./images/mePic.jpg"
+import Profile from "./images/mePic.PNG"
+import Meow from "./images/meow.mp3"
 import UBC from "./images/ubc.png"
 import ScrollToTop from '../../components/ScrollToTop'
 
+
 const AboutMe = () => {
+  const [playSound, setPlaySound] = useState(false);
   let navigate = useNavigate();
 
   return (
     <>
+    {playSound ? <audio src={Meow} autoPlay loop /> : null}
+    
       <ScrollToTop />
       <AboutContainer>
         <ButtonWrap>
@@ -26,10 +32,12 @@ const AboutMe = () => {
         <AboutWrapper>
           <TextWrapper>
             <ImgWrap>
-              <Img src={Placeholder} />
+            <button style={{ border: 'none' }} onClick={()=>{setPlaySound(!playSound);}}>
+              <Img src={Profile} />
+              </button>
             </ImgWrap>
             <Heading>"I'm Christine,"</Heading>
-            <SubHead><i>she/her or any pronouns</i></SubHead>
+            <SubHead><i>she/(any pronouns, really)</i></SubHead>
 
             <ButtonNativeWrap>
               <Button color="none" title="Resume" onPress={() => OpenAnything.Pdf("https://drive.google.com/file/d/1owhiwkM1-1woc5zHu0OTwnfgO3sqWDte/view?usp=sharing")}>Resume</Button>
@@ -59,7 +67,6 @@ const AboutMe = () => {
             </EducationWrap>
           </TextWrapper>
         </AboutWrapper>
-
       </AboutContainer>
     </>
   );

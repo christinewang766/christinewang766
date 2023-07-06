@@ -1,26 +1,52 @@
-import React, { useState } from 'react'
-import * as OpenAnything from "react-native-openanything"
-import 'aos/dist/aos.css'
-import { useNavigate } from 'react-router-dom'
-import { Button } from "react-native"
-import {Helmet} from "react-helmet"
+import React, { useState } from "react";
+import * as OpenAnything from "react-native-openanything";
+import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
+import ScrollToTop from "../../components/ScrollToTop";
+import Confetti from "react-confetti";
+import Collapsible from "./Biography";
+import Profile from "./images/mePic.png";
+import Meow from "./images/meow.mp3";
+import UBC from "./images/ubc.png";
 
-import { BackButton, ButtonWrap, TitleWrap, Title, ImgWrap, AboutContainer, AboutWrapper, TextWrapper, Heading, SubHead, AdjustBioContainer, AdjustBioWrap, ABTitle, Img, StyledPopup, ButtonShort, ButtonMedium, ButtonLong, Education, EducationDate, EducationDetails, EducationWrap, ButtonNativeWrap, UBCImg, UBCImgWrap } from './AboutMeElements'
+import {
+  BackButton,
+  ButtonWrap,
+  TitleWrap,
+  Title,
+  ImgWrap,
+  AboutContainer,
+  TextWrapper,
+  Heading,
+  SubHead,
+  Img,
+  Education,
+  EducationDate,
+  EducationDetails,
+  EducationWrap,
+  ResumeButtonWrap,
+  Button,
+} from "./AboutMeElements";
 
-import Profile from "./images/mePic.PNG"
-import Meow from "./images/meow.mp3"
-import UBC from "./images/ubc.png"
-import ScrollToTop from '../../components/ScrollToTop'
 
 
 const AboutMe = () => {
   const [playSound, setPlaySound] = useState(false);
+  const [opacity, setOpacity] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth - 20);
+  const [height, setHeight] = useState(window.innerHeight);
   let navigate = useNavigate();
+
+  function handleResize() {
+    setWidth(window.innerWidth - 20);
+    setHeight(window.innerHeight);
+  }
+  window.addEventListener("resize", handleResize);
 
   return (
     <>
-    {playSound ? <audio src={Meow} autoPlay loop /> : null}
-    
+      {playSound ? <audio src={Meow} autoPlay loop /> : null}
+      <Confetti width={width} height={height} opacity={opacity} />
       <ScrollToTop />
       <AboutContainer>
         <ButtonWrap>
@@ -29,47 +55,62 @@ const AboutMe = () => {
         <TitleWrap>
           <Title>ABOUT ME</Title>
         </TitleWrap>
-        <AboutWrapper>
-          <TextWrapper>
-            <ImgWrap>
-            <button style={{ border: 'none' }} onClick={()=>{setPlaySound(!playSound);}}>
+        <TextWrapper>
+          <ImgWrap>
+            <button
+              style={{ border: "none" }}
+              onClick={() => {
+                setPlaySound(!playSound);
+                if (opacity == 1) {
+                  setOpacity(0);
+                } else {
+                  setOpacity(1);
+                }
+              }}
+            >
               <Img src={Profile} />
-              </button>
-            </ImgWrap>
-            <Heading>"I'm Christine,"</Heading>
-            <SubHead><i>she/(any pronouns, really)</i></SubHead>
+            </button>
+          </ImgWrap>
+          <Heading>"I'm Christine,"</Heading>
+          <SubHead>
+            <i>she/(any pronouns, really)</i>
+          </SubHead>
 
-            <ButtonNativeWrap>
-              <Button color="none" title="Resume" onPress={() => OpenAnything.Pdf("https://drive.google.com/file/d/1owhiwkM1-1woc5zHu0OTwnfgO3sqWDte/view?usp=sharing")}>Resume</Button>
-            </ButtonNativeWrap>
-            <AdjustBioContainer>
-              <AdjustBioWrap>
-                <ABTitle>Short on Time?<br></br>Choose Biography Length</ABTitle>
-                <StyledPopup trigger={<ButtonShort>short</ButtonShort>}>
-                  <div>Try-hard computer science student at the University of British Columbia. I'm friendly and will bake your favourite cookies!<br></br><br></br>Technical Languages: C++, C, Java, JavaScript, TypeScript, R, HTML, CSS, and Racket</div>
-                </StyledPopup>
-                <StyledPopup trigger={<ButtonMedium>medium</ButtonMedium>}>
-                  <div>Inquisitive, creative, and analytical computer science student at the University of British Columbia, with a strong foundation in math, logic, and object-oriented programming. Christine has a passion for bringing a program to life using languages like C++, C, Java, JavaScript, TypeScript, R, HTML, CSS, and Racket, as well as development tools like Git/GitHub, Visual Studio Code, Node.js, Figma, Excel, RStudio, Jupyter Notebook, and Photoshop.</div>
-                </StyledPopup>
-                <StyledPopup trigger={<ButtonLong>long</ButtonLong>}>
-                Born in New Zealand and raised in British Columbia, Canada, Christine Wang is a computer science student at the University of British Columbia with a strong foundation in math, logic, and object-oriented programming. Christine has a passion for bringing a program to life using languages like C++, C, Java, JavaScript, TypeScript, R, and Racket, HTML, CSS, as well as development tools like Git/GitHub, Visual Studio Code, Node.js, Figma, Excel, RStudio, Jupyter Notebook, and Photoshop. In addition, Christine has a keen eye for design and experience in web development, marketing, and warehouse operations through their various roles as a Web Developer/Designer, Marketing Director, and Warehouse Associate. Overall, Christine's diverse skill set, adaptability, and self-motivation makes them a valuable asset to any team. Currently, they are looking for challenges to <i>stack</i> on new skills and <i>push</i> their limits. 
-<br></br><br></br>Also, they have a <b>STRONG</b> interest in animal-shaped pots! They are not a good gardener, but they can bake some mad cookies.
-                </StyledPopup>
-              </AdjustBioWrap>
-            </AdjustBioContainer>
-            <EducationWrap>
-              <Education>EDUCATION</Education>
-              <EducationDate><b>2021-2025</b></EducationDate>
-              <UBCImgWrap>
-              <UBCImg src={UBC} />
-            </UBCImgWrap>
-              <EducationDetails>University of British Columbia<br></br>BSc majoring in Computer Science</EducationDetails>
-            </EducationWrap>
-          </TextWrapper>
-        </AboutWrapper>
+          <ResumeButtonWrap>
+            <Button
+              onClick={() =>
+                OpenAnything.Pdf(
+                  "https://drive.google.com/file/d/1owhiwkM1-1woc5zHu0OTwnfgO3sqWDte/view?usp=sharing"
+                )
+              }
+            >
+              resume
+            </Button>
+          </ResumeButtonWrap>
+            <Collapsible />
+          <EducationWrap>
+            <Education>EDUCATION</Education>
+            <EducationDate>
+              <b>2021-2025</b>
+            </EducationDate>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img style={{ maxWidth: "15%" }} src={UBC} />
+            </div>
+            <EducationDetails>
+              University of British Columbia<br></br>BSc majoring in Computer
+              Science
+            </EducationDetails>
+          </EducationWrap>
+        </TextWrapper>
       </AboutContainer>
     </>
   );
 };
 
-export default AboutMe
+export default AboutMe;

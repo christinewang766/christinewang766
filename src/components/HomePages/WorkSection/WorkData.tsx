@@ -31,8 +31,8 @@ export const WorkData: {
     l3: "Achieved the highest rate in my department consistently while prioritizing safety and fostering a spirit of teamwork.",
   },
   {
-    company: "Self-Employed",
-    position: "Private Tutor, Peer Tutor",
+    company: "Highshool Tutor",
+    position: "Private/Peer Tutor",
     duration: "April 2019 - April 2020",
     l1: "Taught high school level Chemistry and Mathematics in a flexible and approachable manner, fostering a positive learning environment.",
     l2: "Monitored students' educational progress through regular face-to-face and email check-ups, ensuring that all work was completed and corrected in a timely manner.",

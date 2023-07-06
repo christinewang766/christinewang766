@@ -1,18 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.5bed383f.css",
-    "main.js": "/static/js/main.859e8e42.js",
+    "main.js": "/static/js/main.5633b99c.js",
     "static/media/cuteDemo.MP4": "/static/media/cuteDemo.1bc56f82ac7f3827714b.MP4",
     "static/media/colourLove.MP4": "/static/media/colourLove.981341e2fb0d40f5da0d.MP4",
     "static/media/video.mp4": "/static/media/video.ef3fc063ceeb8317eda6.mp4",
     "static/media/vaccum.PNG": "/static/media/vaccum.c60d18e277ee17f6ae71.PNG",
     "static/media/monet.png": "/static/media/monet.dfaf46f5363f98466315.png",
     "static/media/youFoundMe.png": "/static/media/youFoundMe.9c46ff7271e7f97db7e3.png",
+    "static/media/meow.mp3": "/static/media/meow.7ec84f0583d470b01ec3.mp3",
     "static/media/tv.png": "/static/media/tv.f1d95c70615323e1869d.png",
     "static/media/pochita.png": "/static/media/pochita.98c2bf09d9fb0f8ca77d.png",
-    "static/media/mePic.jpg": "/static/media/mePic.3a237053c90dd997db0e.jpg",
     "static/media/profile.jpg": "/static/media/profile.411098095bb898f4361d.jpg",
-    "static/media/snailPot.png": "/static/media/snailPot.f60e04d2f8a02bdc6dfb.png",
     "static/media/frogPot.png": "/static/media/frogPot.3dcedc97b0e151987470.png",
     "static/media/pokeReveal2.PNG": "/static/media/pokeReveal2.05baf66f76b6712ab52a.PNG",
     "static/media/home.png": "/static/media/home.c029a3ef8c447ce07b22.png",
@@ -20,10 +19,9 @@
     "static/media/collage.png": "/static/media/collage.f879dd74043b9a481bca.png",
     "static/media/pigPot.png": "/static/media/pigPot.9d616d136975268ef809.png",
     "static/media/pokeReveal1.PNG": "/static/media/pokeReveal1.4bf7f206a0e2cd382057.PNG",
-    "static/media/bunnyPot.png": "/static/media/bunnyPot.88af74b7553ae09d7b57.png",
     "static/media/aoxPot.png": "/static/media/aoxPot.3f7b920297cb1eba10ea.png",
+    "static/media/mePic.png": "/static/media/mePic.56647a3058aadad54f56.png",
     "static/media/cheerio.png": "/static/media/cheerio.7d0a9406bb7fccfd79c9.png",
-    "static/media/dogPot.png": "/static/media/dogPot.1dea69d1a00b65f86cd9.png",
     "static/media/flower2.jpg": "/static/media/flower2.b42c26506af612a6ce60.jpg",
     "static/media/benchFall.jpg": "/static/media/benchFall.06d40f6d7f4c759abd58.jpg",
     "static/media/ditchFall.jpg": "/static/media/ditchFall.9f6475ee93efb5cf70a4.jpg",
@@ -60,10 +58,10 @@
     "static/media/init.png": "/static/media/init.e0cd619a9362d9b53fdd.png",
     "index.html": "/index.html",
     "main.5bed383f.css.map": "/static/css/main.5bed383f.css.map",
-    "main.859e8e42.js.map": "/static/js/main.859e8e42.js.map"
+    "main.5633b99c.js.map": "/static/js/main.5633b99c.js.map"
   },
   "entrypoints": [
     "static/css/main.5bed383f.css",
-    "static/js/main.859e8e42.js"
+    "static/js/main.5633b99c.js"
   ]
 }

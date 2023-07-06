@@ -3,7 +3,7 @@ import { AdjustBioContainer, PotButton } from "./AboutMeElements";
 import { BioData } from "./BioData";
 
 const Collapsible = () => {
-  const defaultText: string = "╰─ ⋅ ⋅ ── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ── ⋅ ⋅ ─╯";
+  const defaultText: string = "╰─ ⋅ ⋅ ✩ ⋅ ⋅ ─╯";
   const [key, setKey] = useState(-1);
   const [text, setText] = useState(defaultText);
 

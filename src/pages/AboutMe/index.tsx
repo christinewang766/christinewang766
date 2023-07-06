@@ -28,8 +28,6 @@ import {
   Button,
 } from "./AboutMeElements";
 
-
-
 const AboutMe = () => {
   const [playSound, setPlaySound] = useState(false);
   const [opacity, setOpacity] = useState(0);
@@ -71,7 +69,7 @@ const AboutMe = () => {
               <Img src={Profile} />
             </button>
           </ImgWrap>
-          <Heading>"I'm Christine,"</Heading>
+          <Heading>"I'm Christine."</Heading>
           <SubHead>
             <i>she/(any pronouns, really)</i>
           </SubHead>
@@ -87,7 +85,7 @@ const AboutMe = () => {
               resume
             </Button>
           </ResumeButtonWrap>
-            <Collapsible />
+          <Collapsible />
           <EducationWrap>
             <Education>EDUCATION</Education>
             <EducationDate>

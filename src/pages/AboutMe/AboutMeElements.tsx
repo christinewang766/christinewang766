@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import SnailPot from "./images/snailPot.png";
 import Back from "./images/back.png";
-import DogPot from "./images/dogPot.png";
-import BunnyPot from "./images/bunnyPot.png";
 import monet from "./images/monet.png";
 import clawCursor from "./images/clawCursor.png";
 

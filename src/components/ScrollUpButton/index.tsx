@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
-// @ts-ignore
 import Cheerio from "./cheerio.png";
-// @ts-ignore
 import clawCursor from "./clawCursor.png";
 
 const Button = styled.div`

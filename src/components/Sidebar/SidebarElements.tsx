@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
 import { Link as LinkR } from 'react-router-dom'
-// @ts-ignore
 import pochita from "./images/pochita.png";
-// @ts-ignore
 import closedLetter from "./images/closedLetter.png";
-// @ts-ignore
 import openLetter from "./images/openLetter.png";
 
 export const SidebarContainer = styled.aside`

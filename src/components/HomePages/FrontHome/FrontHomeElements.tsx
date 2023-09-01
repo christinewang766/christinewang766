@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-// @ts-ignore
 import FrogPot from "../images/frogPot.png";
-// @ts-ignore
 import PigPot from "../images/pigPot.png";
 
 export const FrontContainer = styled.div`

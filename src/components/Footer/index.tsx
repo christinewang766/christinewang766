@@ -4,7 +4,6 @@ import { IconType } from "react-icons";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-// @ts-ignore  
 import TurnipsImg from "./youFoundMe.png";
 
 import {

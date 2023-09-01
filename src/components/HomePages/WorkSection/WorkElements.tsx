@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// @ts-ignore
 import clawCursor from "./clawCursor.png";
 
 export const WorkContainer = styled.div`

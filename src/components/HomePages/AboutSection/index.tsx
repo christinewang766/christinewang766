@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 // @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
-// @ts-ignore
 import Profile from "../images/profile.jpg";
 
 

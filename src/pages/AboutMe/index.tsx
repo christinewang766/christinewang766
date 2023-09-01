@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
 import Confetti from "react-confetti";
 import Collapsible from "./Biography";
-import Profile from "./images/mePic.png";
+import Profile from "./images/mePic.PNG";
 import Meow from "./images/meow.mp3";
 import UBC from "./images/ubc.png";
 
@@ -59,7 +59,7 @@ const AboutMe = () => {
               style={{ border: "none" }}
               onClick={() => {
                 setPlaySound(!playSound);
-                if (opacity == 1) {
+                if (opacity === 1) {
                   setOpacity(0);
                 } else {
                   setOpacity(1);
@@ -98,7 +98,7 @@ const AboutMe = () => {
                 justifyContent: "center",
               }}
             >
-              <img style={{ maxWidth: "15%" }} src={UBC} />
+              <img style={{ maxWidth: "15%" }} src={UBC} alt="ubc logo" />
             </div>
             <EducationDetails>
               University of British Columbia<br></br>BSc majoring in Computer

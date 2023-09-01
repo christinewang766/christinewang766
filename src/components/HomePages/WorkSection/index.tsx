@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 // @ts-ignore
 import AOS from "aos";
-// @ts-ignore
 import Paperclip from "./paperclip.png";
 import WorkData from "./WorkData";
 
@@ -39,12 +38,12 @@ function Work() {
               <div key={i} style={{ display: "inline-block" }}>
                 <Button
                   style={{
-                    color: toggleState == i ? "#fff" : "	#000",
+                    color: toggleState === i ? "#fff" : "	#000",
                     boxShadow:
-                      toggleState == i
+                      toggleState === i
                         ? "10px 10px 0 #f1ebe1"
                         : "10px 10px 0 #aaaaaa",
-                    background: toggleState == i ? "#44624a" : "	#f1ebe1",
+                    background: toggleState === i ? "#44624a" : "	#f1ebe1",
                   }}
                   onClick={() => setToggleState(i)}
                 >

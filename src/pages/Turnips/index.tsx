@@ -1,18 +1,18 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Container, Img, BackButton, ButtonWrap } from './TurnipsElements'
+import { Img, BackButton, ButtonWrap } from './TurnipsElements'
 
 const Turnips = () => {
   let navigate = useNavigate();
 
   return (
     <>
-    <Container id='turnips'>
+    <div id='turnips' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         <Img />
         <ButtonWrap>
           <BackButton onClick={() => navigate(-1)}>GO BACK</BackButton>
         </ButtonWrap>
-    </Container>
+    </div>
     </>
   )
 }

@@ -53,6 +53,7 @@ const Skills = () => {
                     maxWidth: "100%",
                     marginBottom: "10px",
                   }}
+                  alt="skills"
                 />
                 <Category>{props.title}</Category>
                 <div

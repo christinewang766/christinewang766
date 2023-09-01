@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-// @ts-ignore
 import CatPot from "../images/catPot.png";
-// @ts-ignore
 import AoxPot from "../images/aoxPot.png";
 
 export const AboutContainer = styled.div`

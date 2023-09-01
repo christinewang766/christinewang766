@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {MdOutlineWavingHand} from 'react-icons/md'
 import {TbPig} from 'react-icons/tb'
-// @ts-ignore
 import Video from './videos/video.mp4'
 
 import { FrontContainer, FrontBackground, FrontContent, FrontH1, FrontP, FrontBtnWrapper, Button } from './FrontHomeElements'

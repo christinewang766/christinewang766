@@ -1,13 +1,8 @@
 import styled from "styled-components";
-// @ts-ignore
 import TextBox from "./media/textBox.png";
-// @ts-ignore
 import TV from "./media/tv.png";
-// @ts-ignore
 import clawCursor from "./media/clawCursor.png";
-// @ts-ignore
 import HeartsDoodle from "./media/hearts.png";
-// @ts-ignore
 import Back from "./media/background.png";
 
 export const BackButton = styled.button`

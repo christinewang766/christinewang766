@@ -78,7 +78,7 @@ const AboutMe = () => {
             <Button
               onClick={() =>
                 OpenAnything.Pdf(
-                  "https://drive.google.com/file/d/1owhiwkM1-1woc5zHu0OTwnfgO3sqWDte/view?usp=sharing"
+                  "https://drive.google.com/file/d/198LHuvRu00LOAqG0SbJOweEHcVVZLtXP/view?usp=sharingx"
                 )
               }
             >

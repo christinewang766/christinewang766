@@ -7,6 +7,14 @@ export const WorkData: {
   l3: string;
 }[] = [
   {
+    company: "Samsung R&D",
+    position: "Front-end Web Developer Co-Op",
+    duration: "September 2023 - September 2024",
+    l1: "Developed front-end logic in JavaScript to handle back-end service responses and managed API requests.",
+    l2: "Troubleshooted customer-reported bugs, ensuring seamless web page updates aligned with design specifications, and actively engaged in collaborative code reviews with senior developers to uphold code quality and adherence to best practices.",
+    l3: "Engineered and elevated the automated test framework by writing comprehensive Cypress integration tests, contributing to robust testing protocols.",
+  },
+  {
     company: "Music Unbounded",
     position: "Web Developer / Designer",
     duration: "November 2022 - present",
@@ -29,14 +37,6 @@ export const WorkData: {
     l1: 'Demonstrated strong problem-solving and analytical decision-making skills in roles such as "Problem Solving" and "Gatekeeping," which required proficiency in computer literacy.',
     l2: "Operated warehouse material handling equipment safely and efficiently in a fast-paced environment to meet company production goals.",
     l3: "Achieved the highest rate in my department consistently while prioritizing safety and fostering a spirit of teamwork.",
-  },
-  {
-    company: "Highshool Tutor",
-    position: "Private/Peer Tutor",
-    duration: "April 2019 - April 2020",
-    l1: "Taught high school level Chemistry and Mathematics in a flexible and approachable manner, fostering a positive learning environment.",
-    l2: "Monitored students' educational progress through regular face-to-face and email check-ups, ensuring that all work was completed and corrected in a timely manner.",
-    l3: "Developed and implemented individualized study plans that resulted in an average grade improvement of 15% on tests, contributing to the overall academic success of students.",
   },
 ];
 

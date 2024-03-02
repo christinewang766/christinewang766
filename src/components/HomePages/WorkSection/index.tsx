@@ -19,7 +19,7 @@ import {
 } from "./WorkElements";
 
 function Work() {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });

@@ -33,7 +33,7 @@ const Collapsible = () => {
       >
         Short on Time?<br></br>Choose Biography Length
       </h4>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "space-evenly", minWidth: "400px" }}>
         {BioData.map((props, i) => {
           return (
             <div key={i}>
@@ -62,7 +62,7 @@ const Collapsible = () => {
         {text}
       </p>
       <div></div>
-    </AdjustBioContainer>
+    </AdjustBioContainer >
   );
 };
 

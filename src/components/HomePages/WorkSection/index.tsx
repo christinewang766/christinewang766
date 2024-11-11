@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// @ts-ignore
 import AOS from "aos";
 import Paperclip from "./paperclip.png";
 import WorkData from "./WorkData";
@@ -94,9 +93,12 @@ function Work() {
                   <Date>{props.duration}</Date>
                   <DescriptionWrap>
                     <Description>
-                      <ListItem>{props.l1}</ListItem>
-                      <ListItem>{props.l2}</ListItem>
-                      <ListItem>{props.l3}</ListItem>
+                      {props.l1 && <ListItem>{props.l1}</ListItem>}
+                      {props.l2 && <ListItem>{props.l2}</ListItem>}
+                      {props.l3 && <ListItem>{props.l3}</ListItem>}
+                      {props.link && <ListItem>
+                        <a href={props.link} target="_blank" style={{ fontFamily: "Lato", color: "#44624a" }}>Christine Wang's LinkedIn</a>
+                      </ListItem>}
                     </Description>
                   </DescriptionWrap>
                 </div>

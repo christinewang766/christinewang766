@@ -68,7 +68,6 @@ export const DescriptionWrap = styled.div`
   width: 530px;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 20px;
 
   @media screen and (max-width: 650px) {

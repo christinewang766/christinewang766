@@ -1,33 +1,41 @@
+import colourlove from "./images/colourlove.gif";
+import colourloveHover from "./images/colourlove-hover.gif";
+import postthat from "./images/postthat.gif";
+import postthatHover from "./images/postthat-hover.gif";
+import website from "./images/website.gif";
+import websiteHover from "./images/website-hover.gif";
+import cutesy from "./images/cutesy.gif";
+import cutesyHover from "./images/cutesy-hover.gif";
 
 export const ProjectData: { title: string, details: string, gif: string, hoverGif: string }[] = [
-    {
-      title: "Colour Love",
-      details:
-        "A modern palette generator for every artist's needs. Login and register, run from dogs and be creative. Your palettes will always be there when you come back.",
-        gif: "https://s11.gifyu.com/images/SQGlA.gif",
-        hoverGif: "https://s12.gifyu.com/images/SQGl1.gif"
-    },
-    {
-      title: "Post-That",
-      details:
-        "A rustic website where you can create, personalize, and send heartfelt postcards. View the messages you receive, and keep a time capsule of memories.",
-        gif: "https://s11.gifyu.com/images/SQGlo.gif",
-        hoverGif: "https://s11.gifyu.com/images/SQGlD.gif"
-    },
-    {
-      title: "Portfolio Website",
-      details:
-        "A website to experiment with design and represent who I am as a (prospective) computer scientist. Serves as a visual resume.",
-        gif: "https://s12.gifyu.com/images/SQGlB.gif",
-        hoverGif: "https://s11.gifyu.com/images/SQGlO.gif"       
-    },
-    {
-      title: "Cutesy Cards",
-      details:
-        "A Java-based flashcard application to help students study. The user can create, save, and edit card decks as well as study in a cute UI.",
-        gif: "https://s11.gifyu.com/images/SQGl5.gif",
-        hoverGif: "https://s12.gifyu.com/images/SQGlt.gif"
-    }
-  ];
+  {
+    title: "Colour Love",
+    details:
+      "A modern palette generator for every artist's needs. Login and register, run from dogs and be creative. Your palettes will always be there when you come back.",
+    gif: `url(${colourlove})`,
+    hoverGif: `url(${colourloveHover})`
+  },
+  {
+    title: "Post-That",
+    details:
+      "A rustic website where you can create, personalize, and send heartfelt postcards. View the messages you receive, and keep a time capsule of memories.",
+    gif: `url(${postthat})`,
+    hoverGif: `url(${postthatHover})`
+  },
+  {
+    title: "Portfolio Website",
+    details:
+      "A website to experiment with design and represent who I am as a (prospective) computer scientist. Serves as a visual resume.",
+    gif: `url(${website})`,
+    hoverGif: `url(${websiteHover})`
+  },
+  {
+    title: "Cutesy Cards",
+    details:
+      "A Java-based flashcard application to help students study. The user can create, save, and edit card decks as well as study in a cute UI.",
+    gif: `url(${cutesy})`,
+    hoverGif: `url(${cutesyHover})`
+  }
+];
 
-  export default ProjectData;
+export default ProjectData;

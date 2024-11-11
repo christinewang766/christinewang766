@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ProjectData } from "./ProjectsData";
@@ -48,8 +47,8 @@ const Projects = () => {
         <ImgWrap
           style={{
             backgroundImage: hover
-              ? "url(" + hoverGif + ")"
-              : "url(" + gif + ")",
+              ? hoverGif
+              :gif,
           }}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}

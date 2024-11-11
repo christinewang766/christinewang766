@@ -98,8 +98,9 @@ export const AboutContainer = styled.div`
   background-size: cover;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
   min-height: 100vh;
   height: 100%;
 `;
@@ -107,6 +108,7 @@ export const AboutContainer = styled.div`
 export const TextWrapper = styled.div`
   background: #f1ebe1;
   justify-content: center;
+      height: fit-content;
 
   @media screen and (max-width: 540px) {
     width: 250px;
@@ -143,11 +145,11 @@ text-align: center;
 export const AdjustBioContainer = styled.div`
   background: #c0cfb2;
   display: flex;
-  padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #44624a;
+  height:fit-content;
 `;
 
 export const ABBtnWrap = styled.div`

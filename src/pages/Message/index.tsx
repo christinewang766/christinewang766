@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import {
   Container,
   BackButton,
-  FormWrap,
   Form,
   FormH1,
   FormLabel,
   Input,
   FormButton,
   ButtonWrap,
+  TextArea,
 } from "./MessageElements";
 import axios from "axios";
 import ScrollToTop from "../../components/ScrollToTop";
@@ -26,7 +26,7 @@ const Message = () => {
     message: "",
   });
 
-  function handleSubmit(e) {
+  function handleSubmit(e: any) {
     e.preventDefault();
     SendToDiscord();
     setFormData({
@@ -82,7 +82,11 @@ const Message = () => {
     { label: "Last Name", placeholder: "Your last name.." },
     { label: "Email", placeholder: "Your email.." },
     { label: "Phone Number", placeholder: "Your phone number.." },
-    { label: "Message", placeholder: "Your message.." },
+  ];
+
+  const messageData: { label: string; placeholder: string } = { label: "Message", placeholder: "What do you want Christine to know?" };
+
+  const formDataFields = ['fname', 'lname', 'email', 'phoneNumber'
   ];
 
   return (
@@ -99,20 +103,18 @@ const Message = () => {
             GO BACK
           </BackButton>
         </ButtonWrap>
-        <FormWrap>
-          <Form
-            id="myForm"
-            onSubmit={(e) => {
-              e.preventDefault();
-              handleSubmit(e);
-              document.getElementById("myForm").reset();
-            }}
-          >
-            <FormH1>Contact &nbsp;Christine!</FormH1>
-            {FormInputData.map((props, i) => {
-              let dataNum: number = i;
-              var dataString: string = dataNum.toString();
-              return (
+        <Form
+          id="myForm"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit(e);
+            (document.getElementById("myForm") as HTMLFormElement | null)?.reset();
+          }}
+        >
+          <FormH1>Contact &nbsp;Christine!</FormH1>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }} >
+            {
+              FormInputData.map((props, i) => (
                 <div key={i}>
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <FormLabel>{props.label}</FormLabel>
@@ -121,31 +123,29 @@ const Message = () => {
                   <Input
                     placeholder={props.placeholder}
                     required
-                    data-key={dataString}
+                    data-key={i}
                     onChange={(e) => {
-                      if (e.target.getAttribute("data-key") === "0") {
-                        setFormData({ ...formData, fname: e.target.value });
-                      } else if (e.target.getAttribute("data-key") === "1") {
-                        setFormData({ ...formData, lname: e.target.value });
-                      } else if (e.target.getAttribute("data-key") === "2") {
-                        setFormData({ ...formData, email: e.target.value });
-                      } else if (e.target.getAttribute("data-key") === "3") {
-                        setFormData({
-                          ...formData,
-                          phoneNumber: e.target.value,
-                        });
-                      } else if (e.target.getAttribute("data-key") === "4") {
-                        setFormData({ ...formData, message: e.target.value });
-                      }
+                      const fieldKey = formDataFields[i];
+                      setFormData({ ...formData, [fieldKey]: e.target.value });
                     }}
-                  ></Input>
+                  />
                 </div>
-              );
-            })}
-            <FormButton type="submit">Submit</FormButton>
-          </Form>
-        </FormWrap>
-      </Container>
+              ))
+            }
+          </div>
+
+          <div style={{ display: "flex", flexDirection: 'column', alignItems: "flex-start" }}>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <FormLabel>{messageData.label}</FormLabel>
+              <p style={{ fontSize: "14px", color: "red" }}>&nbsp;*</p>
+            </div>
+            <TextArea rows={5} placeholder={messageData.placeholder} required onChange={(e) => {
+              setFormData({ ...formData, 'message': e.target.value });
+            }}></TextArea>
+          </div>
+          <FormButton type="submit">Submit</FormButton>
+        </Form>
+      </Container >
     </>
   );
 };

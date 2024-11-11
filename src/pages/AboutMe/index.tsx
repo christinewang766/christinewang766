@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
 import Confetti from "react-confetti";
 import Collapsible from "./Biography";
-import Profile from "./images/mePic.PNG";
+import Profile from "./images/mePic.jpg";
 import Meow from "./images/meow.mp3";
 import UBC from "./images/ubc.png";
 
@@ -53,59 +53,61 @@ const AboutMe = () => {
         <TitleWrap>
           <Title>ABOUT ME</Title>
         </TitleWrap>
-        <TextWrapper>
-          <ImgWrap>
-            <button
-              style={{ border: "none" }}
-              onClick={() => {
-                setPlaySound(!playSound);
-                if (opacity === 1) {
-                  setOpacity(0);
-                } else {
-                  setOpacity(1);
-                }
-              }}
-            >
-              <Img src={Profile} />
-            </button>
-          </ImgWrap>
-          <Heading>"I'm Christine."</Heading>
-          <SubHead>
-            <i>she/(any pronouns, really)</i>
-          </SubHead>
+        <div style={{ display: 'inline-flex' }}>
+          <TextWrapper>
+            <ImgWrap>
+              <button
+                style={{ border: "none" }}
+                onClick={() => {
+                  setPlaySound(!playSound);
+                  if (opacity === 1) {
+                    setOpacity(0);
+                  } else {
+                    setOpacity(1);
+                  }
+                }}
+              >
+                <Img src={Profile} />
+              </button>
+            </ImgWrap>
+            <Heading>"I'm Christine."</Heading>
+            <SubHead>
+              <i>she/(any pronouns, really)</i>
+            </SubHead>
 
-          <ResumeButtonWrap>
-            <Button
-              onClick={() =>
-                OpenAnything.Pdf(
-                  "https://drive.google.com/file/d/198LHuvRu00LOAqG0SbJOweEHcVVZLtXP/view?usp=sharingx"
-                )
-              }
-            >
-              resume
-            </Button>
-          </ResumeButtonWrap>
+            <ResumeButtonWrap>
+              <Button
+                onClick={() =>
+                  OpenAnything.Pdf(
+                    "https://drive.google.com/file/d/198LHuvRu00LOAqG0SbJOweEHcVVZLtXP/view?usp=sharingx"
+                  )
+                }
+              >
+                resume
+              </Button>
+            </ResumeButtonWrap>
+            <EducationWrap>
+              <Education>EDUCATION</Education>
+              <EducationDate>
+                <b>2021-2025</b>
+              </EducationDate>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img style={{ maxWidth: "15%" }} src={UBC} alt="ubc logo" />
+              </div>
+              <EducationDetails>
+                University of British Columbia<br></br>BSc majoring in Computer
+                Science
+              </EducationDetails>
+            </EducationWrap>
+          </TextWrapper>
           <Collapsible />
-          <EducationWrap>
-            <Education>EDUCATION</Education>
-            <EducationDate>
-              <b>2021-2025</b>
-            </EducationDate>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <img style={{ maxWidth: "15%" }} src={UBC} alt="ubc logo" />
-            </div>
-            <EducationDetails>
-              University of British Columbia<br></br>BSc majoring in Computer
-              Science
-            </EducationDetails>
-          </EducationWrap>
-        </TextWrapper>
+        </div>
       </AboutContainer>
     </>
   );

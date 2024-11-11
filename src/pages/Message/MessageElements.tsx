@@ -3,7 +3,7 @@ import clawCursor from "./clawCursor.png";
 import Back from "./back.png";
 
 export const Container = styled.div`
-height: 100%;
+height: 100vh;
 width: 100%;
 display: flex;
 align-items: center;
@@ -46,17 +46,6 @@ padding: 10px 15px;
 }
 `
 
-export const FormWrap = styled.div`
-height: 90%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-
-@media screen and (max-width: 400px) {
-    height: 80px;
-}
-`
-
 export const Form = styled.form`
 background: #f1ebe1;
 max-width: 500px;
@@ -64,7 +53,6 @@ height: auto;
 width: 100%;
 z-index: 1;
 display: grid;
-margin: 0 auto;
 padding: 50px 32px;
 border-radius: 4px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.9);
@@ -88,18 +76,32 @@ font-family: "Dantina";
 export const FormLabel = styled.div`
 margin-bottom: 8px;
 font-size: 14px;
-font-family: "Kano";
+font-family: "Lato";
 color: 	#44624a;
 `
 
 export const Input = styled.input`
 padding: 12px 12px;
+font-family: "Lato";
 margin-bottom: 25px; 
 border: none;
 border-radius: 4px;
 background: #fff;
 color: #000;
 width: 90%;
+&:hover{
+    cursor: URL(${clawCursor}), auto;
+}
+`
+export const TextArea = styled.textarea`
+padding: 12px 12px;
+font-family: "Lato";
+margin-bottom: 25px; 
+border: none;
+border-radius: 4px;
+background: #fff;
+color: #000;
+width: 95%;
 &:hover{
     cursor: URL(${clawCursor}), auto;
 }

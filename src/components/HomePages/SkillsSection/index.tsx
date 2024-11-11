@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-// @ts-ignore
 import AOS from "aos";
 import "aos/dist/aos.css";
+import libraries from "./images/libraries.png";
+import devtools from "./images/devtools.png";
+import languages from "./images/languages.png";
+
 
 import {
   SkillsContainer,
@@ -20,19 +23,20 @@ const Skills = () => {
   const skillsData: { title: string; details: string; src: string }[] = [
     {
       title: "Languages",
-      details: "TypeScript, JavaScript, Java, C++, C, CSS3, HTML5, R, Racket",
-      src: "https://s12.gifyu.com/images/SQG41.png",
+      details: "TypeScript, JavaScript, Java, C++, CSS3, HTML5",
+      src: languages,
+
     },
     {
       title: "Libraries",
       details: "React, Redux, CSS (Tailwind, styled-components), Java Swing",
-      src: "https://s11.gifyu.com/images/SQG4D.png",
+      src: libraries,
     },
     {
       title: "Development Tools",
       details:
-        "Git/GitHub, Visual Studio Code, Node.js, Next.js, Figma, Photoshop, Excel, RStudio",
-      src: "https://s11.gifyu.com/images/SQG4o.png",
+        "Git/GitHub, Node.js, Next.js, Figma, Visual Studio Code, IntelliJ IDEA",
+      src: devtools,
     },
   ];
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import FrogPot from "../images/frogPot.png";
 import PigPot from "../images/pigPot.png";
+import background from './images/mainpagebackground.gif'
 
 export const FrontContainer = styled.div`
   display: flex;
@@ -22,6 +23,8 @@ export const FrontBackground = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+background: url(${background});
+
 `;
 
 export const FrontContent = styled.div`

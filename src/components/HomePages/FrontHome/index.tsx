@@ -4,8 +4,17 @@ import { TbPig } from 'react-icons/tb'
 
 import { FrontContainer, FrontBackground, FrontContent, FrontH1, FrontP, FrontBtnWrapper, Button } from './FrontHomeElements'
 
+
 const FrontHome = () => {
     const [hover, setHover] = useState(false)
+
+    function preloadImage(url: string) {
+        var img = new Image();
+        img.src = url;
+    }
+
+    preloadImage('./images/mainpagebackground.gif');
+    preloadImage('../images/pigPot.png');
 
     return (
         <FrontContainer id="home">

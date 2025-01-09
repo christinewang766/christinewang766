@@ -17,6 +17,21 @@ import ScrollToTop from "../../ScrollToTop";
 
 const Projects = () => {
 
+  function preloadImage(url: string) {
+    var img = new Image();
+    img.src = url;
+  }
+
+  preloadImage('./images/colourlove.gif');
+  preloadImage('./images/colourlove-hover.gif');
+  preloadImage('./images/postthat.gif');
+  preloadImage('./images/postthat-hover.gif');
+  preloadImage('./images/website.gif');
+  preloadImage('./images/website-hover.gif');
+  preloadImage('./images/cutesy.gif');
+  preloadImage('./images/cutesy-hover.gif');
+
+
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
   }, []);
@@ -27,7 +42,7 @@ const Projects = () => {
     gif: string;
     hoverGif: string;
   }
-  
+
   function MappedProject({
     title, details, gif, hoverGif
   }: CreateMapProps) {
@@ -48,7 +63,7 @@ const Projects = () => {
           style={{
             backgroundImage: hover
               ? hoverGif
-              :gif,
+              : gif,
           }}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}

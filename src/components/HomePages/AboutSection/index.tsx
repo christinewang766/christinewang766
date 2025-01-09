@@ -21,6 +21,10 @@ const AboutSection = () => {
     AOS.init({ duration: 1200, once: true });
   }, []);
 
+
+  var img = new Image();
+  img.src = '../images/aoxPot.png';
+
   return (
     <>
       <AboutContainer id="about">

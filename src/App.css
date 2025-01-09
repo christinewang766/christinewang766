@@ -1,12 +1,21 @@
 /* general styling and ensures cat cursor throughout App */
 * {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-  cursor: url(catCursor.png), auto;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	cursor: url(catCursor.png), auto;
 }
 
 /* ensures claw cursor on hover throughout App */
 a {
-  cursor: url(clawCursor.png), auto;
+	cursor: url(clawCursor.png), auto;
+}
+
+.preload-background {
+	background: url("./mainpagebackground.gif") no-repeat center center;
+	background-size: cover;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
 }

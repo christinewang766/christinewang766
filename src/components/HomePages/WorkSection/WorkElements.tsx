@@ -11,6 +11,7 @@ export const WorkContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    height: auto;
   }
 `;
 
@@ -26,6 +27,7 @@ export const WorkWrapper = styled.div`
 
   @media screen and (max-width: 460px) {
     width: 100%;
+    height: 100%;
   }
 `;
 

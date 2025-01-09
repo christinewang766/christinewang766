@@ -8,6 +8,8 @@
 - Contact (ft. an opportunity for me to respond to any inquiries you have)
 - Pig easter egg (ft. hehehehe)
 
+### The stack used: ~~JavaScript~~ TypeScript, CSS, HTML, React, Styled Components
+
 ### The way I brag about this site on my resume is as follows:
 - Engineered responsive user interfaces optimized for seamless performance across various devices and screen sizes.
 - Designed and implemented a modern, visually engaging landing page leveraging popular JavaScript frameworks like React, integrating tools such as styled-components and Router for dynamic and efficient development.

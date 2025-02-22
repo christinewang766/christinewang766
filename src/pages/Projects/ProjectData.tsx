@@ -16,6 +16,16 @@ export const ProjectData: {
   img?: string;
 }[] = [
     {
+      title: "Stats With Class!",
+      repo: "gitfront.io/r/christinewang766/zH55ZjAevRfD/CPSC-310-Sections-Insight/",
+      languages: "Typescript, JavaScript, HTML, CSS",
+      status: "Complete",
+      l1: "Wrote 150+ tests using the Mocha testing framework and Chai assertions to ensure robust and reliable functionality.",
+      l2: "Engineered a robust file processing system enabling users to upload course databases in ZIP and HTML format, which are parsed, validated, and transformed into structured data models.",
+      l3: "Designed and deployed interactive, customized graph visualizations, providing users with actionable insights into uploaded datasets.",
+      video: "https://www.dropbox.com/scl/fi/9ezp3zm6b64w08hlmhqjg/CPSC310-Insight-UBC-Sections.mp4?rlkey=eqyqhfqw1z93wzne1it84hvhn&st=4czlqkcf&raw=1",
+      videoText: "Please expand the video!",
+    }, {
       title: "Colour Love",
       repo: "https://github.com/christinewang766/colour-love",
       languages: "Typescript, CSS, HTML",

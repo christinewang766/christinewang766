@@ -8,14 +8,23 @@ import { FrontContainer, FrontBackground, FrontContent, FrontH1, FrontP, FrontBt
 const FrontHome = () => {
     const [hover, setHover] = useState(false)
 
+    const PreloadIcons = () => (
+        <div style={{ visibility: 'hidden', position: 'absolute', height: 0, overflow: 'hidden' }}>
+            <TbPig />
+            <MdOutlineWavingHand />
+        </div>
+    );
+
+
     return (
         <>
-            <div className="preload-background" />
+            <PreloadIcons />
             <FrontContainer id="home">
                 <FrontBackground />
                 <FrontContent>
                     <FrontH1>Christine's Portfolio</FrontH1>
-                    <FrontP>Welcome to my website</FrontP>
+                    <FrontP>Welcome to my website!</FrontP>
+                    <FrontP>Try not to get lost in here...👀</FrontP>
                     <FrontBtnWrapper>
                         <Button to="contact"
                             onMouseEnter={() => { setHover(!hover) }}
